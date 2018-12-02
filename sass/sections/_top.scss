@@ -1,0 +1,42 @@
+.section--top {
+  line-height: 42px;
+  width: 100%;
+  max-width: 1092px;
+  height: 62px;
+  background-color: $white;
+  border-bottom: 1px solid $grey-light;
+
+  .cell {
+    border-left: 1px solid $grey-light;
+
+    .money {
+      font-family: $font-roboto-regular;
+      font-weight: bold;
+      font-size: $font-size-20;
+      color: $grey-light;
+    }
+
+    .user-names {
+      font-family: $font-roboto-light;
+      font-size: $font-size-13;
+      color: $blue-user;
+      font-weight: normal;
+      margin-right: 18px;
+    }
+  }
+
+  .cell:nth-of-type(2) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 28px;
+      top: 19px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $orange-point;
+    }
+  }
+}

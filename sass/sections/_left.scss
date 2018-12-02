@@ -1,0 +1,42 @@
+.section--left {
+  background-color: $aside-back;
+  line-height: 42px;
+  font-family: $font-roboto-light;
+  color: $grey-menu-items;
+  width: 188px;
+
+  .first {
+    height: 60px;
+  }
+
+  .second {
+    padding: 10px 0 0 20px;
+
+    .status {
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    .cell {
+      position: relative;
+
+      .user-names {
+        color: $blue-user;
+        margin: 0;
+        padding-left: 11px;
+        font-weight: lighter;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background-color: $online;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        left: 30px;
+        top: 0;
+      }
+    }
+  }
+}
