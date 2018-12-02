@@ -1,0 +1,31 @@
+.component--menu {
+  background-color: $aside-back;
+  margin: 0;
+  padding: 0 0 23px 0;
+  border-bottom: 1px solid $grey-menu-items;
+
+
+  .list-item {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $grey-menu-hover;
+
+      .item {
+        color: $white;
+      }
+    }
+
+    .orange-line {
+      background-color: $orange-point;
+      height: 39px;
+      width: 4px;
+    }
+
+    .item {
+      font-weight: lighter;
+      font-size: $font-size-14;
+      margin: 0;
+    }
+  }
+}

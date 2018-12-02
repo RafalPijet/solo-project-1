@@ -1,0 +1,124 @@
+.col-1 {flex: 8.333%;}
+.col-2 {flex: 16.667%;}
+.col-3 {flex: 25%;}
+.col-4 {flex: 33.333%;}
+.col-5 {flex: 41.667%;}
+.col-6 {flex: 50%;}
+.col-7 {flex: 58.333%;}
+.col-8 {flex: 66.667%;}
+.col-9 {flex: 75%;}
+.col-10 {flex: 83.333%;}
+.col-11 {flex: 91.667%;}
+.col-12 {flex: 100%;}
+
+.container {
+  margin: 0 auto;
+  max-width: 1056px;
+  position: relative;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-start-align {
+  align-items: flex-start;
+}
+
+.flex-center-align {
+  align-items: center;
+}
+
+.flex-end-align {
+  align-items:  flex-end;
+}
+
+.flex-content-start {
+  align-content: flex-start;
+}
+
+.flex-content-center {
+  align-content: center;
+}
+
+.flex-content-end {
+  align-content: flex-end;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.icon {
+  height: 20px;
+  width: 18px;
+  margin: 0 18px;
+}
+
+.icon-menu {
+  height: 16px;
+  width: 16px;
+  margin: 0 11px;
+}
+
+.active-item-menu {
+  background-color: $grey-menu-hover;
+}
+
+.hidden-orange-line {
+  visibility: hidden;
+}
+
+.active-white-color {
+  color: $white;
+}
+
+.top-height {
+  height: 62px;
+}
+
+.natural {
+  height: fit-content;
+}
+
+.negative {
+  filter: invert(100%);
+}

@@ -1,0 +1,26 @@
+/* Colors */
+$white: #fff;
+$grey-light: #9c9c9c;
+$grey-menu-items: #999999;
+$grey-menu-hover: #282828;
+$blue-user: #56919f;
+$orange-point: #f58220;
+$aside-back: #191919;
+$online: #04ae00;
+
+/* Font sizes */
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-20: 20px;
+
+/* Fonts */
+@import "../images/roboto-bold.ttf";
+@import "../images/roboto-light.ttf";
+@import "../images/roboto-medium.ttf";
+@import "../images/roboto-regular.ttf";
+
+$font-roboto-light: "Roboto Light", arial;
+$font-roboto-medium: "Roboto Medium", arial;
+$font-roboto-bold: "Roboto Bold", arial;
+$font-roboto-regular: "Roboto Regular", arial;

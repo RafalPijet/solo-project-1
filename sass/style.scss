@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+
+/* Components */
+@import "components/menu";
+/* Sections */
+@import "sections/top";
+@import "sections/left";
+/* Pages / Views */
+
+
+.section--general {
+  background-color: $white;
+}
