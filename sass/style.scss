@@ -5,12 +5,12 @@
 
 /* Components */
 @import "components/menu";
+@import "components/calendary-from-to";
 /* Sections */
 @import "sections/top";
 @import "sections/left";
+@import "sections/general";
 /* Pages / Views */
 
 
-.section--general {
-  background-color: $white;
-}
+

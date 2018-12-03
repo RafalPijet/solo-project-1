@@ -99,6 +99,12 @@
   margin: 0 11px;
 }
 
+.calendary-icon {
+  height: 13px;
+  width: 13px;
+  margin: 0;
+}
+
 .active-item-menu {
   background-color: $grey-menu-hover;
 }
@@ -121,4 +127,24 @@
 
 .negative {
   filter: invert(100%);
+}
+
+.bottom-line {
+  border-bottom: 1px solid $grey-line;
+}
+
+.back-blue {
+  background-color: $blue-point;
+}
+
+.back-grey {
+  background-color: $grey-back;
+}
+
+.back-orange {
+  background-color: $orange-back;
+}
+
+.back-green {
+  background-color: $green-back;
 }

@@ -502,6 +502,12 @@ template {
   margin: 0 11px;
 }
 
+.calendary-icon {
+  height: 13px;
+  width: 13px;
+  margin: 0;
+}
+
 .active-item-menu {
   background-color: #282828;
 }
@@ -526,6 +532,26 @@ template {
 
 .negative {
   filter: invert(100%);
+}
+
+.bottom-line, .component--calendary, .section--general .top {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.back-blue {
+  background-color: #80bfca;
+}
+
+.back-grey {
+  background-color: #f3f3f1;
+}
+
+.back-orange {
+  background-color: #ff9a38;
+}
+
+.back-green {
+  background-color: #59b66d;
 }
 
 /* Components */
@@ -558,6 +584,51 @@ template {
   font-weight: lighter;
   font-size: 14px;
   margin: 0;
+}
+
+.component--calendary {
+  height: 108px;
+}
+
+.component--calendary .date-field {
+  position: relative;
+  height: 40px;
+  width: 325px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+}
+
+.component--calendary .date-field .enter-date {
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  font-weight: lighter;
+  border: none;
+  width: 140px;
+}
+
+.component--calendary .date-field::after {
+  position: absolute;
+  content: "";
+  background-color: #e3e3e3;
+  border: none;
+  width: 1px;
+  height: 28px;
+  left: 144px;
+  top: 7px;
+}
+
+.component--calendary .date-field .enter-date:first-child {
+  padding-left: 19px;
+}
+
+.component--calendary .refresh {
+  width: 40px;
+  height: 40px;
+  background-color: #f58220;
+  border-radius: 5px;
+  border: none;
+  margin-left: 14px;
+  cursor: pointer;
 }
 
 /* Sections */
@@ -647,8 +718,82 @@ template {
   top: 0;
 }
 
-/* Pages / Views */
 .section--general {
   background-color: #fff;
+  line-height: 42px;
 }
+
+.section--general .top {
+  height: 47px;
+}
+
+.section--general .top .title {
+  font-family: "Roboto Medium", arial;
+  font-size: 16px;
+  color: #a6a6a6;
+  font-weight: normal;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.section--general .main {
+  width: 100%;
+  max-width: 694px;
+  margin: 0 auto;
+  padding-top: 21px;
+  font-family: "Roboto Bold", arial;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+.section--general .main .right {
+  margin: 0 0 0 33px;
+}
+
+.section--general .main .left {
+  margin: 0 33px 0 0;
+}
+
+.section--general .main .data {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.section--general .main .data .first {
+  margin: 0;
+}
+
+.section--general .main .data .second {
+  margin: 0;
+  font-family: "Roboto Light", arial;
+  color: #000;
+}
+
+.section--general .main .middle {
+  padding-top: 40px;
+}
+
+.section--general .main .middle .legend {
+  border-radius: 3px;
+  margin: 0 21px;
+}
+
+.section--general .main .middle .legend .point {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 17px;
+}
+
+.section--general .main .middle .legend .description {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0 17px;
+}
+
+.section--general .main .middle .chart {
+  padding: 77px 0 54px;
+}
+
+/* Pages / Views */
 /*# sourceMappingURL=style.css.map */
