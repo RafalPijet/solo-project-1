@@ -2,76 +2,52 @@
   background-color: $white;
   line-height: 42px;
 
-  .top {
-    height: 47px;
-    @extend .bottom-line;
+  .right {
+    margin: 21px 0 0 33px;
+  }
 
-    .title {
-      font-family: $font-roboto-medium;
-      font-size: $font-size-16;
-      color: $grey-title;
-      font-weight: normal;
-      padding-left: 18px;
+  .left {
+    margin: 21px 33px 0 0;
+  }
+
+  .data {
+    border-bottom: 1px solid $grey-line;
+
+    .first {
       margin: 0;
+    }
+
+    .second {
+      margin: 0;
+      font-family: $font-roboto-light;
+      color: $black;
     }
   }
 
-  .main {
-    width: 100%;
-    max-width: 694px;
-    margin: 0 auto;
-    padding-top: 21px;
-    font-family: $font-roboto-bold;
-    font-size: $font-size-16;
-    color: $grey-title;
+  .middle {
+    padding-top: 40px;
 
-    .right {
-      margin: 0 0 0 33px;
-    }
+    .legend {
+      border-radius: 3px;
+      margin: 0 21px;
 
-    .left {
-      margin: 0 33px 0 0;
-    }
+      .point {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: none;
+        margin-left: 17px;
+      }
 
-    .data {
-      border-bottom: 1px solid $grey-line;
-
-      .first {
+      .description {
+        font-weight: lighter;
         margin: 0;
-      }
-
-      .second {
-        margin: 0;
-        font-family: $font-roboto-light;
-        color: $black;
+        padding: 0 17px;
       }
     }
 
-    .middle {
-      padding-top: 40px;
-
-      .legend {
-        border-radius: 3px;
-        margin: 0 21px;
-
-        .point {
-          width: 16px;
-          height: 16px;
-          border-radius: 50%;
-          border: none;
-          margin-left: 17px;
-        }
-
-        .description {
-          font-weight: lighter;
-          margin: 0;
-          padding: 0 17px;
-        }
-      }
-
-      .chart {
-        padding: 77px 0 54px;
-      }
+    .chart {
+      padding: 77px 0 54px;
     }
   }
 }

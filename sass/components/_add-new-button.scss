@@ -1,0 +1,16 @@
+.component__add-new-button {
+  height: 88px;
+  @extend .bottom-line;
+
+    .add {
+      font-family: $font-roboto-light;
+      font-size: $font-size-18;
+      color: $white;
+      width: 126px;
+      height: 40px;
+      background-color: $orange-point;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+}

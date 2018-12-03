@@ -99,6 +99,11 @@
   margin: 0 11px;
 }
 
+.icon-table {
+  height: 18px;
+  width: 18px;
+}
+
 .calendary-icon {
   height: 13px;
   width: 13px;
@@ -109,8 +114,12 @@
   background-color: $grey-menu-hover;
 }
 
-.hidden-orange-line {
+.hidden {
   visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .active-white-color {
@@ -147,4 +156,27 @@
 
 .back-green {
   background-color: $green-back;
+}
+
+.top {
+  height: 47px;
+  @extend .bottom-line;
+
+  .title {
+    font-family: $font-roboto-medium;
+    font-size: $font-size-16;
+    color: $grey-title;
+    font-weight: normal;
+    padding-left: 18px;
+    margin: 0;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 684px;
+  margin: 0 auto;
+  font-family: $font-roboto-bold;
+  font-size: $font-size-16;
+  color: $grey-title;
 }

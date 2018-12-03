@@ -39,4 +39,8 @@
       background-color: $orange-point;
     }
   }
+
+  .cell:nth-of-type(4) {
+    cursor: pointer;
+  }
 }

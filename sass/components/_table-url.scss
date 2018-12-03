@@ -1,0 +1,38 @@
+.component__table-url {
+  .links-table {
+    border-collapse: collapse;
+
+    .row-table {
+      height: 58px;
+      @extend .bottom-line;
+
+      &:hover {
+        background-color: $grey-back;
+
+        .third-column, .fourth-column {
+          img {
+            @extend .visible;
+          }
+        }
+      }
+
+      .first-column {
+        padding-left: 16px;
+        font-weight: bold;
+        width: 297px;
+      }
+
+      .second-column {
+        a {
+          color: $blue-user;
+          text-decoration: none;
+        }
+      }
+
+      .third-column, .fourth-column {
+        padding-right: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+}
