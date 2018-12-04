@@ -571,7 +571,7 @@ template {
   filter: invert(100%);
 }
 
-.bottom-line, .component--calendary, .component__add-new-button, .component__table-url .links-table .row-table, .component__title-line {
+.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -723,6 +723,10 @@ template {
 .component__table-url .links-table .row-table .third-column, .component__table-url .links-table .row-table .fourth-column {
   padding-right: 7px;
   cursor: pointer;
+}
+
+.component__table-url .links-table .row-table:first-child {
+  border-top: 1px solid #e3e3e3;
 }
 
 .component__title-line {
