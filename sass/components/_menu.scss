@@ -14,6 +14,12 @@
       .item {
         color: $white;
       }
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
     }
 
     .orange-line {

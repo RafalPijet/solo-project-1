@@ -91,12 +91,24 @@
   height: 20px;
   width: 18px;
   margin: 0 18px;
+
+  path {
+    fill: $grey-icon;
+  }
+
+  polygon {
+    fill: $grey-icon;
+  }
 }
 
 .icon-menu {
   height: 16px;
   width: 16px;
   margin: 0 11px;
+
+  path {
+    fill:$grey-menu-items;
+  }
 }
 
 .icon-table {
@@ -104,10 +116,30 @@
   width: 18px;
 }
 
+.icon-table-orange {
+  @extend .icon-table;
+
+  path {
+    fill: $orange-icon;
+  }
+}
+
+.icon-table-grey {
+  @extend .icon-table;
+
+  path {
+  fill: $grey-light;
+  }
+}
+
 .calendary-icon {
   height: 13px;
   width: 13px;
   margin: 0;
+
+  path {
+    fill: $grey-light;
+  }
 }
 
 .active-item-menu {
@@ -124,6 +156,12 @@
 
 .active-white-color {
   color: $white;
+}
+
+.icon-white {
+  path {
+    fill: $white;
+  }
 }
 
 .top-height {
@@ -156,20 +194,6 @@
 
 .back-green {
   background-color: $green-back;
-}
-
-.top {
-  height: 47px;
-  @extend .bottom-line;
-
-  .title {
-    font-family: $font-roboto-medium;
-    font-size: $font-size-16;
-    color: $grey-title;
-    font-weight: normal;
-    padding-left: 18px;
-    margin: 0;
-  }
 }
 
 .main {

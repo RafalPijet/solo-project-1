@@ -496,21 +496,45 @@ template {
   margin: 0 18px;
 }
 
+.icon path {
+  fill: #a8a8a8;
+}
+
+.icon polygon {
+  fill: #a8a8a8;
+}
+
 .icon-menu {
   height: 16px;
   width: 16px;
   margin: 0 11px;
 }
 
-.icon-table {
+.icon-menu path {
+  fill: #999999;
+}
+
+.icon-table, .icon-table-orange, .icon-table-grey {
   height: 18px;
   width: 18px;
+}
+
+.icon-table-orange path {
+  fill: #f58220;
+}
+
+.icon-table-grey path {
+  fill: #9c9c9c;
 }
 
 .calendary-icon {
   height: 13px;
   width: 13px;
   margin: 0;
+}
+
+.calendary-icon path {
+  fill: #9c9c9c;
 }
 
 .active-item-menu {
@@ -521,12 +545,16 @@ template {
   visibility: hidden;
 }
 
-.visible, .component__table-url .links-table .row-table:hover .third-column img, .component__table-url .links-table .row-table:hover .fourth-column img {
+.visible, .component__table-url .links-table .row-table:hover .third-column svg, .component__table-url .links-table .row-table:hover .fourth-column svg {
   visibility: visible;
 }
 
 .active-white-color {
   color: #fff;
+}
+
+.icon-white path {
+  fill: #fff;
 }
 
 .top-height {
@@ -543,7 +571,7 @@ template {
   filter: invert(100%);
 }
 
-.bottom-line, .top, .component--calendary, .component__add-new-button, .component__table-url .links-table .row-table {
+.bottom-line, .component--calendary, .component__add-new-button, .component__table-url .links-table .row-table, .component__title-line {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -561,19 +589,6 @@ template {
 
 .back-green {
   background-color: #59b66d;
-}
-
-.top {
-  height: 47px;
-}
-
-.top .title {
-  font-family: "Roboto Medium", arial;
-  font-size: 16px;
-  color: #a6a6a6;
-  font-weight: normal;
-  padding-left: 18px;
-  margin: 0;
 }
 
 .main {
@@ -603,6 +618,10 @@ template {
 
 .component--menu .list-item:hover .item {
   color: #fff;
+}
+
+.component--menu .list-item:hover svg path {
+  fill: #fff;
 }
 
 .component--menu .list-item .orange-line {
@@ -704,6 +723,19 @@ template {
 .component__table-url .links-table .row-table .third-column, .component__table-url .links-table .row-table .fourth-column {
   padding-right: 7px;
   cursor: pointer;
+}
+
+.component__title-line {
+  height: 47px;
+}
+
+.component__title-line .title {
+  font-family: "Roboto Medium", arial;
+  font-size: 16px;
+  color: #a6a6a6;
+  font-weight: normal;
+  padding-left: 18px;
+  margin: 0;
 }
 
 /* Sections */

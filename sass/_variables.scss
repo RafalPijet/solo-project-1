@@ -7,10 +7,12 @@ $grey-menu-hover: #282828;
 $grey-title: #a6a6a6;
 $grey-line: #e3e3e3;
 $grey-back: #f3f3f1;
+$grey-icon: #a8a8a8;
 $blue-user: #56919f;
 $blue-point: #80bfca;
 $orange-point: #f58220;
 $orange-back: #ff9a38;
+$orange-icon: #f58220;
 $green-back: #59b66d;
 $aside-back: #191919;
 $online: #04ae00;
@@ -23,10 +25,10 @@ $font-size-18: 18px;
 $font-size-20: 20px;
 
 /* Fonts */
-@import "../images/roboto-bold.ttf";
-@import "../images/roboto-light.ttf";
-@import "../images/roboto-medium.ttf";
-@import "../images/roboto-regular.ttf";
+@import "../fonts/roboto-bold.ttf";
+@import "../fonts/roboto-light.ttf";
+@import "../fonts/roboto-medium.ttf";
+@import "../fonts/roboto-regular.ttf";
 
 $font-roboto-light: "Roboto Light", arial;
 $font-roboto-medium: "Roboto Medium", arial;

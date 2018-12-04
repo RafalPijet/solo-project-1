@@ -10,7 +10,7 @@
         background-color: $grey-back;
 
         .third-column, .fourth-column {
-          img {
+          svg {
             @extend .visible;
           }
         }

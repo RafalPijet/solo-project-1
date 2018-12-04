@@ -7,7 +7,7 @@
     "test": "npm-run-all test:*",
     "test:html": "nu-html-checker *.html",
     "init-project": "npm install && npm-run-all init:*",
-    "init:dirs": "mkdir -p sass/components sass/pages sass/sections css vendor images js",
+    "init:dirs": "mkdir -p sass/components sass/pages sass/sections css vendor images js fonts",
     "init:files": "touch index.html styleguide.html sass/style.scss sass/_layout.scss sass/_mixins.scss sass/_normalize.scss sass/_variables.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
@@ -19,7 +19,7 @@
     "watch:sassprefixer": "npm-run-all -p watch-sass watch-autoprefixer",
     "watch-sass": "onchange sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass",
     "watch-autoprefixer": "onchange css/style.css -- autoprefixer-cli -o css/style.css css/style.css",
-    "watch:browsersync": "browser-sync start --server --files 'sass/*.scss' '*.html'"
+    "watch:browsersync": "browser-sync start --server --files sass/*.scss *.html"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,13 @@
+.component__title-line {
+  height: 47px;
+  @extend .bottom-line;
+
+  .title {
+    font-family: $font-roboto-medium;
+    font-size: $font-size-16;
+    color: $grey-title;
+    font-weight: normal;
+    padding-left: 18px;
+    margin: 0;
+  }
+}
