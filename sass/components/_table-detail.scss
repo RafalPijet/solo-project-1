@@ -1,0 +1,52 @@
+.component__table-detail {
+  .detail-table {
+    width: 100%;
+    max-width: 1020px;
+    margin: 20px auto 0;
+    border-collapse: collapse;
+    cursor: pointer;
+
+    thead {
+      tr {
+        th:nth-of-type(8) {
+          text-align: left;
+
+          p {
+            display: inline;
+            width: 100px;
+            margin-right: 0;
+          }
+
+          svg {
+            padding-left: 10px;
+          }
+        }
+
+        th {
+          &:hover {
+            p {
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: $grey-back;
+        }
+      }
+    }
+
+    tr {
+      @extend .bottom-line;
+      height: 60px;
+
+      th:first-child, td:first-child {
+        padding-left: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.component__pagination-table {
+  height: 86px;
+
+  .pagination-list {
+    margin: 0 23px;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      .sign {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        font-family: $font-roboto-light;
+        font-size: $font-size-16;
+        font-weight: lighter;
+        line-height: 17px;
+        color: $blue-numbers;
+        cursor: pointer;
+      }
+
+      &:hover {
+        background-color: $grey-back;
+      }
+    }
+  }
+}

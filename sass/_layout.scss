@@ -111,9 +111,25 @@
   }
 }
 
+.icon-arows {
+  width: 11px;
+  height: 18px;
+  cursor: pointer;
+
+  polygon {
+    fill: $grey-title;
+  }
+}
+
 .icon-table {
   height: 18px;
   width: 18px;
+}
+
+.icon-white {
+  path {
+    fill: $white;
+  }
 }
 
 .icon-table-orange {
@@ -129,6 +145,15 @@
 
   path {
   fill: $grey-light;
+  }
+}
+
+.icon-table-title {
+  width: 7px;
+  height: 5px;
+
+  polygon {
+    fill: $grey-title;
   }
 }
 
@@ -156,12 +181,6 @@
 
 .active-white-color {
   color: $white;
-}
-
-.icon-white {
-  path {
-    fill: $white;
-  }
 }
 
 .top-height {

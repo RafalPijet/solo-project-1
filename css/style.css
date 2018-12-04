@@ -514,9 +514,23 @@ template {
   fill: #999999;
 }
 
+.icon-arows {
+  width: 11px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.icon-arows polygon {
+  fill: #a6a6a6;
+}
+
 .icon-table, .icon-table-orange, .icon-table-grey {
   height: 18px;
   width: 18px;
+}
+
+.icon-white path {
+  fill: #fff;
 }
 
 .icon-table-orange path {
@@ -525,6 +539,15 @@ template {
 
 .icon-table-grey path {
   fill: #9c9c9c;
+}
+
+.icon-table-title {
+  width: 7px;
+  height: 5px;
+}
+
+.icon-table-title polygon {
+  fill: #a6a6a6;
 }
 
 .calendary-icon {
@@ -553,10 +576,6 @@ template {
   color: #fff;
 }
 
-.icon-white path {
-  fill: #fff;
-}
-
 .top-height {
   height: 62px;
 }
@@ -571,7 +590,7 @@ template {
   filter: invert(100%);
 }
 
-.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line {
+.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -740,6 +759,92 @@ template {
   font-weight: normal;
   padding-left: 18px;
   margin: 0;
+}
+
+.component__p-table-title {
+  font-family: "Roboto Bold", arial;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  color: #a6a6a6;
+  text-align: left;
+}
+
+.component__p-table-cell {
+  font-family: "Roboto Light", arial;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 17px;
+  color: #000;
+}
+
+.component__pagination-table {
+  height: 86px;
+}
+
+.component__pagination-table .pagination-list {
+  margin: 0 23px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.component__pagination-table .pagination-list li {
+  display: inline-block;
+}
+
+.component__pagination-table .pagination-list li .sign {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-family: "Roboto Light", arial;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 17px;
+  color: #668ba6;
+  cursor: pointer;
+}
+
+.component__pagination-table .pagination-list li:hover {
+  background-color: #f3f3f1;
+}
+
+.component__table-detail .detail-table {
+  width: 100%;
+  max-width: 1020px;
+  margin: 20px auto 0;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.component__table-detail .detail-table thead tr th:nth-of-type(8) {
+  text-align: left;
+}
+
+.component__table-detail .detail-table thead tr th:nth-of-type(8) p {
+  display: inline;
+  width: 100px;
+  margin-right: 0;
+}
+
+.component__table-detail .detail-table thead tr th:nth-of-type(8) svg {
+  padding-left: 10px;
+}
+
+.component__table-detail .detail-table thead tr th:hover p {
+  color: #000;
+}
+
+.component__table-detail .detail-table tbody tr:hover {
+  background-color: #f3f3f1;
+}
+
+.component__table-detail .detail-table tr {
+  height: 60px;
+}
+
+.component__table-detail .detail-table tr th:first-child, .component__table-detail .detail-table tr td:first-child {
+  padding-left: 14px;
 }
 
 /* Sections */
