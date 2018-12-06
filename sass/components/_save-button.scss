@@ -1,0 +1,15 @@
+.component__save-button {
+  height: 106px;
+
+  .save {
+    font-family: $font-roboto-light;
+    font-size: $font-size-18;
+    color: $white;
+    width: 94px;
+    height: 40px;
+    background-color: $orange-point;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
