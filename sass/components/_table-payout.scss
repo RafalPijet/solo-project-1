@@ -1,9 +1,9 @@
-.component__table-detail {
+.component__table-payout {
   display: block;
   width:100%;
   overflow-x: auto;
 
-  .detail-table {
+  .payout-table {
     width: 100%;
     max-width: 1020px;
     margin: 20px auto 0;
@@ -12,7 +12,7 @@
 
     thead {
       tr {
-        th:nth-of-type(8) {
+        th:first-child {
           text-align: left;
 
           p {

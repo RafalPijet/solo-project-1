@@ -530,7 +530,7 @@ template {
   filter: invert(100%);
 }
 
-.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit {
+.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit, .component__table-payout .payout-table tr {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -1009,7 +1009,7 @@ template {
 
 .component__table-detail .detail-table {
   width: 100%;
-  max-width: 100%;
+  max-width: 1020px;
   margin: 20px auto 0;
   border-collapse: collapse;
   cursor: pointer;
@@ -1247,4 +1247,47 @@ template {
 }
 
 /* Pages / Views */
+.component__table-payout {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.component__table-payout .payout-table {
+  width: 100%;
+  max-width: 1020px;
+  margin: 20px auto 0;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.component__table-payout .payout-table thead tr th:first-child {
+  text-align: left;
+}
+
+.component__table-payout .payout-table thead tr th:first-child p {
+  display: inline;
+  width: 100px;
+  margin-right: 0;
+}
+
+.component__table-payout .payout-table thead tr th:first-child svg {
+  padding-left: 10px;
+}
+
+.component__table-payout .payout-table thead tr th:hover p {
+  color: #000;
+}
+
+.component__table-payout .payout-table tbody tr:hover {
+  background-color: #f3f3f1;
+}
+
+.component__table-payout .payout-table tr {
+  height: 60px;
+}
+
+.component__table-payout .payout-table tr th:first-child, .component__table-payout .payout-table tr td:first-child {
+  padding-left: 14px;
+}
 /*# sourceMappingURL=style.css.map */
