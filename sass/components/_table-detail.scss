@@ -1,7 +1,11 @@
 .component__table-detail {
+  display: block;
+  width:100%;
+  overflow-x: auto;
+
   .detail-table {
     width: 100%;
-    max-width: 1020px;
+    max-width: 100%;
     margin: 20px auto 0;
     border-collapse: collapse;
     cursor: pointer;
