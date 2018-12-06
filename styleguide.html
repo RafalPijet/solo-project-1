@@ -12,7 +12,7 @@
 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+<h4 class="component__h4-size-16">[component__h4-size-16]Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
 <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
 <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
 <p class="component__p-table-title">[component__p-table-title] Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
@@ -718,6 +718,104 @@
                         </svg>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="section__personal-data">
+    <div class="container">
+        <div class="component__title-line row flex-center-align">
+            <h4 class="title text-upper">personal data</h4>
+        </div>
+        <form class="component__form-user-data-edit row flex-center">
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="firstname">Name</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="text" id="firstname" placeholder="Leonardo">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="surname">Surname</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="text" id="surname" placeholder="Dicaprio">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="email">E-mail</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="email" id="email" placeholder="leo@gmail.com">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="phone">Phone number</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="email" id="phone" placeholder="+1 432 555 00 44">
+                </div>
+            </div>
+        </form>
+        <form class="component__form-user-data-edit row flex-center">
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="skype">Name</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="text" id="skype" placeholder="Leonardo.D">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16 text-upper" for="icq">icq</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="text" id="icq">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="msn">Msn</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="email" id="msn">
+                </div>
+            </div>
+        </form>
+        <form class="component__form-user-data-edit row flex-center">
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="wallet">Wallet</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="text" id="wallet">
+                </div>
+            </div>
+        </form>
+        <form class="component__form-user-data-edit row flex-center">
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="password">Password</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="password" id="password">
+                </div>
+            </div>
+            <div class="personal-data row col-md-6">
+                <div class="col-md-4">
+                    <label class="component__h4-size-16" for="repeat_password">Repeat</label>
+                </div>
+                <div class="enter-data col-md-8">
+                    <input class="user-edit" type="password" id="repeat_password">
+                </div>
+            </div>
+        </form>
+        <div class="component__save-button row flex-center flex-center-align">
+            <button class="save">Save</button>
         </div>
     </div>
 </section>
