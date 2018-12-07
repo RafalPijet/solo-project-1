@@ -1,13 +1,18 @@
 .section--top {
+  margin-left: calc(100vw / 2 - 452px);
   line-height: 42px;
   width: 100%;
   max-width: 1092px;
   height: 62px;
   background-color: $white;
-  border-bottom: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-line;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  @extend .shadow-menu;
 
   .cell {
-    border-left: 1px solid $grey-light;
+    border-left: 1px solid $grey-line;
 
     .money {
       font-family: $font-roboto-regular;
@@ -42,5 +47,6 @@
 
   .cell:nth-of-type(4) {
     cursor: pointer;
+    border-right: 1px solid $grey-line;
   }
 }

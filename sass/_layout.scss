@@ -1,14 +1,25 @@
+body {
+  background-color: $grey-body;
+}
 
 .container {
-  margin: 0 auto;
+  margin: 78px auto 22px calc(100vw / 2 - 434px);
   max-width: 1056px;
-  position: relative;
   width: 100%;
+  background-color: $grey-body;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.shadow-content {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-menu {
+  box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 .text-upper {

@@ -340,11 +340,15 @@ template {
   display: none;
 }
 
+body {
+  background-color: #f5f5f2;
+}
+
 .container {
-  margin: 0 auto;
+  margin: 78px auto 22px calc(100vw / 2 - 434px);
   max-width: 1056px;
-  position: relative;
   width: 100%;
+  background-color: #f5f5f2;
 }
 
 .row {
@@ -352,6 +356,14 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.shadow-content, .section--general, .section__links {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-menu, .section--top, .section--left {
+  box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 .text-upper {
@@ -817,6 +829,7 @@ template {
   margin: 0;
   padding: 0 0 23px 0;
   border-bottom: 1px solid #999999;
+  list-style-type: none;
 }
 
 .component--menu .list-item {
@@ -1103,18 +1116,66 @@ template {
   cursor: pointer;
 }
 
+.component__table-payout {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.component__table-payout .payout-table {
+  width: 100%;
+  max-width: 1020px;
+  margin: 20px auto 0;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.component__table-payout .payout-table thead tr th:first-child {
+  text-align: left;
+}
+
+.component__table-payout .payout-table thead tr th:first-child p {
+  display: inline;
+  width: 100px;
+  margin-right: 0;
+}
+
+.component__table-payout .payout-table thead tr th:first-child svg {
+  padding-left: 10px;
+}
+
+.component__table-payout .payout-table thead tr th:hover p {
+  color: #000;
+}
+
+.component__table-payout .payout-table tbody tr:hover {
+  background-color: #f3f3f1;
+}
+
+.component__table-payout .payout-table tr {
+  height: 60px;
+}
+
+.component__table-payout .payout-table tr th:first-child, .component__table-payout .payout-table tr td:first-child {
+  padding-left: 14px;
+}
+
 /* Sections */
 .section--top {
+  margin-left: calc(100vw / 2 - 452px);
   line-height: 42px;
   width: 100%;
   max-width: 1092px;
   height: 62px;
   background-color: #fff;
-  border-bottom: 1px solid #9c9c9c;
+  border-bottom: 1px solid #e3e3e3;
+  display: inline-block;
+  position: fixed;
+  top: 0;
 }
 
 .section--top .cell {
-  border-left: 1px solid #9c9c9c;
+  border-left: 1px solid #e3e3e3;
 }
 
 .section--top .cell .money {
@@ -1149,6 +1210,7 @@ template {
 
 .section--top .cell:nth-of-type(4) {
   cursor: pointer;
+  border-right: 1px solid #e3e3e3;
 }
 
 .section--left {
@@ -1157,6 +1219,11 @@ template {
   font-family: "Roboto Light", arial;
   color: #999999;
   width: 188px;
+  height: 100vh;
+  display: inline-block;
+  position: fixed;
+  margin-left: calc(100vw / 2 - 640px);
+  top: 0;
 }
 
 .section--left .first {
@@ -1195,8 +1262,9 @@ template {
 }
 
 .section--general {
-  background-color: #fff;
   line-height: 42px;
+  margin-bottom: 22px;
+  background-color: #fff;
 }
 
 .section--general .top-distance {
@@ -1246,48 +1314,10 @@ template {
   padding: 77px 0 54px;
 }
 
+.section__links {
+  margin-top: 22px;
+  background-color: #fff;
+}
+
 /* Pages / Views */
-.component__table-payout {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-}
-
-.component__table-payout .payout-table {
-  width: 100%;
-  max-width: 1020px;
-  margin: 20px auto 0;
-  border-collapse: collapse;
-  cursor: pointer;
-}
-
-.component__table-payout .payout-table thead tr th:first-child {
-  text-align: left;
-}
-
-.component__table-payout .payout-table thead tr th:first-child p {
-  display: inline;
-  width: 100px;
-  margin-right: 0;
-}
-
-.component__table-payout .payout-table thead tr th:first-child svg {
-  padding-left: 10px;
-}
-
-.component__table-payout .payout-table thead tr th:hover p {
-  color: #000;
-}
-
-.component__table-payout .payout-table tbody tr:hover {
-  background-color: #f3f3f1;
-}
-
-.component__table-payout .payout-table tr {
-  height: 60px;
-}
-
-.component__table-payout .payout-table tr th:first-child, .component__table-payout .payout-table tr td:first-child {
-  padding-left: 14px;
-}
 /*# sourceMappingURL=style.css.map */
