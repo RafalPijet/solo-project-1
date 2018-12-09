@@ -932,5 +932,117 @@
         </div>
     </div>
 </section>
+<div class="container">
+    <section class="section__postback">
+        <div class="component__title-line row flex-center-align">
+            <h4 class="title text-upper">new postback</h4>
+        </div>
+        <div class="part-one">
+            <p>You can insert some parameters in this postback:</p>
+            <div class="row">
+                <div class="col-md-6 row">
+                    <h4 class="component__h4-size-16">Signup</h4>
+                    <div class="window-area">
+                        <textarea name="" id="first-text-area" cols="30" rows="10" placeholder="crm_userId = %user_id%"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 row">
+                    <h4 class="component__h4-size-16">Deposit</h4>
+                    <div class="window-area">
+                        <textarea name="" id="second-text-area" cols="30" rows="10" placeholder="crm_userId = %user_id%"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="component__h4-size-16">Postback type</h4>
+                    <div class="window-select row flex-center-align flex-between">
+                        <select name="" id="first-select">
+                            <option value="S2S (http://..)">S2S (http://..)</option>
+                        </select>
+                        <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                        viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
+                            <polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="component__h4-size-16">To countries</h4>
+                    <div class="window-select row flex-center-align flex-between">
+                        <select name="" id="second-select">
+                            <option value="Select countries">Select countries</option>
+                        </select>
+                        <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                        viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
+                            <polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="component__h4-size-16">Sending options</h4>
+                    <div class="window-select row flex-center-align flex-between">
+                        <select name="" id="third-select">
+                            <option value="Select">Select</option>
+                        </select>
+                        <svg class="icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                        viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
+                            <polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part-two">
+            <div class="row">
+                <div class="box col-md-6 row">
+                    <h4 class="component__h4-size-16"><span class="text-upper text-red">not </span>send statuses</h4>
+                    <div class="window-work col-md-12 row">
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>checkNumber</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>noAnswer</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>noCall</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>callAgain</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>checkNumber</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>noAnswer</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>noCall</h5>
+                        </div>
+                        <div class="checkbox-line col-md-12 row flex-center-align flex-start">
+                            <input type="checkbox">
+                            <h5>callAgain</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-md-6 row">
+                    <h4 class="component__h4-size-16">Send after</h4>
+                    <div class="window-work col-md-12 row">
+                        <input type="range" min="0" max="168">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="component__add-new-button row flex-end flex-center-align">
+            <button class="add">Create Pixel</button>
+        </div>
+    </section>
+</div>
 </body>
 </html>

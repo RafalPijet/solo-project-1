@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $grey-body;
+
 }
 
 .container {
@@ -20,6 +25,10 @@ body {
 
 .shadow-menu {
   box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.text-red {
+  color: $red-normal;
 }
 
 .text-upper {
