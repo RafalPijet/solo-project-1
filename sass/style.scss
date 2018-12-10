@@ -17,6 +17,7 @@
 @import "components/form-user-data-edit";
 @import "components/save-button";
 @import "components/table-payout";
+@import "components/checkbox";
 
 /* Sections */
 @import "sections/top";
@@ -26,4 +27,92 @@
 
 /* Pages / Views */
 
+.section__add-banners {
+  width: 100%;
+  max-width: 1074px;
+  background-color: $white;
+  margin: 0 auto;
+  @extend .shadow-content;
+
+  svg {
+    margin-right: 15px;
+  }
+
+  .part-one {
+    padding-bottom: 28px;
+    @extend .bottom-line;
+
+    .box {
+      width: 436px;
+
+      .input-long {
+        @extend .prop-input-size;
+      }
+    }
+
+    .box-low {
+      width: 132px;
+
+      .input-short {
+        @extend .prop-input-size;
+
+        p {
+          font-family: $font-roboto-light;
+          font-size: 14px;
+          padding: 0 30px 0 12px;
+        }
+      }
+    }
+
+    .long {
+      padding-right: 10px;
+    }
+
+    .short {
+      width: 159px;
+      padding-right: 16px;
+    }
+
+    .box-next {
+      .input-middle {
+        @extend .prop-input-size;
+        width: 335px;
+      }
+    }
+
+    .first {
+      padding-left: 21px;
+    }
+
+    .second {
+      width: 335px;
+    }
+
+    .margin-h4 {
+      margin: 26px 0 19px;
+      line-height: 17px;
+    }
+  }
+
+  .part-two {
+    @extend .bottom-line;
+
+    &>div:first-child {
+      border-right: 1px solid $grey-line;
+    }
+  }
+
+  .part-three {
+    height: 82px;
+
+    .input-link {
+      @extend .prop-input-size;
+      max-width: 758px;
+    }
+
+    .copy {
+      width: 150px;
+    }
+  }
+}
 

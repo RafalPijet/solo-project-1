@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $grey-body;
 }
@@ -108,11 +112,25 @@ body {
   path {
     fill:$grey-menu-items;
   }
+
+  polygon {
+    fill: $grey-icon;
+  }
 }
 
 .icon-arows {
   width: 11px;
   height: 18px;
+  cursor: pointer;
+
+  polygon {
+    fill: $grey-title;
+  }
+}
+
+.icon-close {
+  width: 12px;
+  height: 12px;
   cursor: pointer;
 
   polygon {
@@ -139,11 +157,28 @@ body {
   }
 }
 
+.icon-link-white {
+  @extend .icon-table;
+
+  path {
+    fill: $white;
+  }
+}
+
 .icon-table-grey {
   @extend .icon-table;
 
   path {
   fill: $grey-light;
+  }
+}
+
+.icon-checkbox-blue {
+  height: 13px;
+  width: 13px;
+
+  path {
+    fill: $blue-user;
   }
 }
 
@@ -221,6 +256,13 @@ body {
   font-family: $font-roboto-bold;
   font-size: $font-size-16;
   color: $grey-title;
+}
+
+.prop-input-size {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $grey-line;
+  border-radius: 3px;
 }
 
 @media(max-width: 767px) {

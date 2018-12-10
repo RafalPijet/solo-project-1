@@ -1,0 +1,40 @@
+.component__checkbox {
+  width: 100%;
+  max-width: 500px;
+  height: 325px;
+  overflow: scroll;
+
+  h4 {
+    margin: 12px 0 0;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+
+  .checkbox-line {
+    height: 38px;
+
+    input {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+    h5 {
+      font-family: $font-roboto-light;
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 0;
+      padding-left: 17px;
+    }
+
+    &:hover {
+      background-color: $grey-back;
+
+      svg {
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+}

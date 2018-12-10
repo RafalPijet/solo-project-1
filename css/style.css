@@ -340,6 +340,10 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f5f5f2;
 }
@@ -358,7 +362,7 @@ body {
       flex-wrap: wrap;
 }
 
-.shadow-content, .section--general, .section__links {
+.shadow-content, .section--general, .section__links, .section__add-banners {
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -466,6 +470,10 @@ body {
   fill: #999999;
 }
 
+.icon-menu polygon {
+  fill: #a8a8a8;
+}
+
 .icon-arows {
   width: 11px;
   height: 18px;
@@ -476,7 +484,17 @@ body {
   fill: #a6a6a6;
 }
 
-.icon-table, .icon-table-orange, .icon-table-grey {
+.icon-close {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.icon-close polygon {
+  fill: #a6a6a6;
+}
+
+.icon-table, .icon-table-orange, .icon-link-white, .icon-table-grey {
   height: 18px;
   width: 18px;
 }
@@ -489,8 +507,21 @@ body {
   fill: #f58220;
 }
 
+.icon-link-white path {
+  fill: #fff;
+}
+
 .icon-table-grey path {
   fill: #9c9c9c;
+}
+
+.icon-checkbox-blue {
+  height: 13px;
+  width: 13px;
+}
+
+.icon-checkbox-blue path {
+  fill: #56919f;
 }
 
 .icon-table-title {
@@ -542,7 +573,7 @@ body {
   filter: invert(100%);
 }
 
-.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit, .component__table-payout .payout-table tr {
+.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit, .component__table-payout .payout-table tr, .section__add-banners .part-one, .section__add-banners .part-two {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -569,6 +600,13 @@ body {
   font-family: "Roboto Bold", arial;
   font-size: 16px;
   color: #a6a6a6;
+}
+
+.prop-input-size, .section__add-banners .part-one .box .input-long, .section__add-banners .part-one .box-low .input-short, .section__add-banners .part-one .box-next .input-middle, .section__add-banners .part-three .input-link {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 
 @media (max-width: 767px) {
@@ -1160,6 +1198,47 @@ body {
   padding-left: 14px;
 }
 
+.component__checkbox {
+  width: 100%;
+  max-width: 500px;
+  height: 325px;
+  overflow: scroll;
+}
+
+.component__checkbox h4 {
+  margin: 12px 0 0;
+}
+
+.component__checkbox svg {
+  margin-right: 15px;
+}
+
+.component__checkbox .checkbox-line {
+  height: 38px;
+}
+
+.component__checkbox .checkbox-line input {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.component__checkbox .checkbox-line h5 {
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.component__checkbox .checkbox-line:hover {
+  background-color: #f3f3f1;
+}
+
+.component__checkbox .checkbox-line:hover svg {
+  visibility: visible;
+  cursor: pointer;
+}
+
 /* Sections */
 .section--top {
   margin-left: calc(100vw / 2 - 452px);
@@ -1219,7 +1298,6 @@ body {
   font-family: "Roboto Light", arial;
   color: #999999;
   width: 188px;
-  height: 100vh;
   display: inline-block;
   position: fixed;
   margin-left: calc(100vw / 2 - 640px);
@@ -1320,4 +1398,74 @@ body {
 }
 
 /* Pages / Views */
+.section__add-banners {
+  width: 100%;
+  max-width: 1074px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.section__add-banners svg {
+  margin-right: 15px;
+}
+
+.section__add-banners .part-one {
+  padding-bottom: 28px;
+}
+
+.section__add-banners .part-one .box {
+  width: 436px;
+}
+
+.section__add-banners .part-one .box-low {
+  width: 132px;
+}
+
+.section__add-banners .part-one .box-low .input-short p {
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  padding: 0 30px 0 12px;
+}
+
+.section__add-banners .part-one .long {
+  padding-right: 10px;
+}
+
+.section__add-banners .part-one .short {
+  width: 159px;
+  padding-right: 16px;
+}
+
+.section__add-banners .part-one .box-next .input-middle {
+  width: 335px;
+}
+
+.section__add-banners .part-one .first {
+  padding-left: 21px;
+}
+
+.section__add-banners .part-one .second {
+  width: 335px;
+}
+
+.section__add-banners .part-one .margin-h4 {
+  margin: 26px 0 19px;
+  line-height: 17px;
+}
+
+.section__add-banners .part-two > div:first-child {
+  border-right: 1px solid #e3e3e3;
+}
+
+.section__add-banners .part-three {
+  height: 82px;
+}
+
+.section__add-banners .part-three .input-link {
+  max-width: 758px;
+}
+
+.section__add-banners .part-three .copy {
+  width: 150px;
+}
 /*# sourceMappingURL=style.css.map */
