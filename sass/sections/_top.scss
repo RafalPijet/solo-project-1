@@ -1,5 +1,5 @@
 .section--top {
-  margin-left: calc(100vw / 2 - 452px);
+  //margin-left: calc(100vw / 2 - 452px);
   line-height: 42px;
   width: 100%;
   max-width: 1092px;
@@ -9,6 +9,7 @@
   display: inline-block;
   position: fixed;
   top: 0;
+  left: 188px;
   @extend .shadow-menu;
 
   .cell {

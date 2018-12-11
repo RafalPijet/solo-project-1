@@ -4,10 +4,10 @@
   font-family: $font-roboto-light;
   color: $grey-menu-items;
   width: 188px;
-  //height: 100vh;
+  height: 100vh;
   display: inline-block;
   position: fixed;
-  margin-left: calc(100vw / 2 - 640px);
+  //margin-left: calc(100vw / 2 - 640px);
   top: 0;
   @extend .shadow-menu;
 
