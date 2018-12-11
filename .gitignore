@@ -79,3 +79,5 @@ typings/
 .dynamodb/ 
 
 package-lock.json
+
+css/style.css
