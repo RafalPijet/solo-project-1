@@ -1,6 +1,6 @@
-.section--left {
+.section__left-short {
   @extend .prop-left-menu;
-  width: 188px;
+  width: 54px;
   @extend .shadow-menu;
 
   .first {
@@ -8,7 +8,7 @@
   }
 
   .second {
-    padding: 10px 0 0 20px;
+    padding-top: 26px;
 
     .status {
       margin: 0;
@@ -18,22 +18,20 @@
     .cell {
       position: relative;
 
-      .user-names {
-        color: $blue-user;
-        margin: 0;
-        padding-left: 11px;
-        font-weight: lighter;
-      }
-
       &::after {
         position: absolute;
         content: "";
         background-color: $online;
-        width: 11px;
-        height: 11px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        left: 30px;
+        left: 20px;
         top: 0;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
   }

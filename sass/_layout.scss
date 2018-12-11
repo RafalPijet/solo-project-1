@@ -270,6 +270,17 @@ body {
   border-radius: 3px;
 }
 
+.prop-left-menu {
+  background-color: $aside-back;
+  line-height: 42px;
+  font-family: $font-roboto-light;
+  color: $grey-menu-items;
+  //height: 100vh;
+  display: inline-block;
+  //position: fixed;
+  top: 0;
+}
+
 @media(max-width: 767px) {
   @include grid("sm");
 }
