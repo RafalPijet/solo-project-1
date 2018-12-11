@@ -1,0 +1,60 @@
+.component--menu-mobile {
+  @extend .prop-comp-menu;
+  padding: 25px 0;
+  border-top: 1px solid $grey-menu-items;
+  list-style-type: none;
+
+  .list-item {
+    cursor: pointer;
+    height: 4em;
+
+    & > div {
+      width: 100%;
+      height: 100%;
+
+      div:last-child {
+        width: 80%;
+      }
+    }
+
+    svg {
+      width: 26px;
+      height: 26px;
+      margin: 0 20px;
+
+      path {
+        fill:$grey-menu-items;
+      }
+
+      polygon {
+        fill: $grey-icon;
+      }
+    }
+
+    &:hover {
+      background-color: $grey-menu-hover;
+
+      .item {
+        color: $white;
+      }
+
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    .orange-line {
+      background-color: $orange-point;
+      height: 65px;
+      width: 8px;
+    }
+
+    .item {
+      font-weight: lighter;
+      font-size: $font-size-26;
+      margin: 0;
+    }
+  }
+}

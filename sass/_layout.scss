@@ -281,6 +281,24 @@ body {
   top: 0;
 }
 
+.prop-comp-menu {
+  background-color: $aside-back;
+  margin: 0;
+  border-bottom: 1px solid $grey-menu-items;
+  list-style-type: none;
+}
+
+.prop-sect-top {
+  width: 100%;
+  max-width: 1280px;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  @extend .shadow-menu;
+}
+
 @media(max-width: 767px) {
   @include grid("sm");
 }

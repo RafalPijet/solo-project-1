@@ -1,15 +1,17 @@
-.section--left {
+.section__mobile-menu {
   @extend .prop-left-menu;
-  width: 188px;
+  width: 100%;
+  max-width: 767px;
   @extend .shadow-menu;
-  z-index: 9;
 
   .first {
     height: 60px;
+    padding: 0 20px 0;
   }
 
   .second {
-    padding: 10px 0 0 20px;
+    padding: 10px;
+    border-bottom: 1px solid $grey-menu-items;
 
     .status {
       margin: 0;
