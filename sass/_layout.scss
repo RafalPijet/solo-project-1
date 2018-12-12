@@ -7,8 +7,14 @@ body {
 
 }
 
+.container-fluid {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+}
+
 .container {
-  margin: 78px auto 22px 206px;
+  //margin: 78px auto 22px 206px;
   max-width: 1056px;
   width: 100%;
   background-color: $grey-body;
@@ -218,6 +224,10 @@ body {
   visibility: visible;
 }
 
+.display-off {
+  display: none;
+}
+
 .active-white-color {
   color: $white;
 }
@@ -275,10 +285,13 @@ body {
   line-height: 42px;
   font-family: $font-roboto-light;
   color: $grey-menu-items;
-  //height: 100vh;
   display: inline-block;
-  //position: fixed;
+  position: fixed;
   top: 0;
+}
+
+.height-max {
+  height: 100vh;
 }
 
 .prop-comp-menu {
@@ -301,14 +314,50 @@ body {
 
 @media(max-width: 767px) {
   @include grid("sm");
+
+  .hidden-low-size {
+    visibility: hidden;
+  }
+
+  .show-menu {
+    visibility: visible;
+  }
+
+  .top-margin {
+    margin-top: 78px;
+  }
 }
 
 @media(min-width: 768px) {
   @include grid("md");
+
+  .hidden-low-size {
+    visibility: hidden;
+  }
+
+  .visible-low-size {
+    visibility: visible;
+  }
+
+  .low-margin {
+    margin: 78px auto 22px 72px;
+  }
 }
 
 @media(min-width: 992px) {
   @include grid("lg");
+
+  .visible-big-size {
+    visibility: visible;
+  }
+
+  .hidden-big-size {
+    visibility: hidden;
+  }
+
+  .normal-margin {
+    margin: 78px auto 22px 206px;
+  }
 }
 
 @media(min-width: 1200px) {

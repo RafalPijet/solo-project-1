@@ -2,6 +2,7 @@
   @extend .prop-left-menu;
   width: 54px;
   @extend .shadow-menu;
+  z-index: 9;
 
   .first {
     height: 60px;
