@@ -5,6 +5,12 @@
   .list-item {
     cursor: pointer;
 
+    a {
+      font-family: $font-roboto-light;
+      color: $grey-menu-items;
+      text-decoration: none;
+    }
+
     &:hover {
       background-color: $grey-menu-hover;
 

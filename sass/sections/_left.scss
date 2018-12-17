@@ -6,6 +6,10 @@
 
   .first {
     height: 60px;
+
+    img:last-child {
+      cursor: pointer;
+    }
   }
 
   .second {
