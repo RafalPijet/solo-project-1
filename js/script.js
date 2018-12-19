@@ -6,7 +6,7 @@
     var verticalMenu = document.getElementById("vartical");
     var workField = document.getElementById("field");
     var menuLeft = document.getElementById("menu-left");
-    var menuTop = document.getElementById("menu-top");
+    var check = false;
 
     hambMobileButton.addEventListener("click", function (event) {
         event.stopPropagation();
@@ -20,20 +20,42 @@
         event.stopPropagation();
         menuLeft.classList.add("left-menu-off");
         menuLeft.classList.remove("left-menu-on");
-        workField.classList.add("slide-to-left");
-        workField.classList.remove("slide-to-right");
-        menuTop.classList.add("slide-to-left");
-        menuTop.classList.remove("slide-to-right");
+        workField.classList.add("container-max-width");
+        workField.classList.remove("normal-margin");
+        check = true;
     })
 
     hambShortButton.addEventListener("click", function (event) {
         event.stopPropagation();
         menuLeft.classList.remove("left-menu-off");
         menuLeft.classList.add("left-menu-on");
-        workField.classList.remove("slide-to-left");
-        workField.classList.add("slide-to-right");
-        menuTop.classList.remove("slide-to-left");
-        menuTop.classList.add("slide-to-right");
+        workField.classList.remove("container-max-width");
+        workField.classList.add("normal-margin");
+        check = false;
+
+        if (window.innerWidth > 992 && check == false) {
+            workField.classList.add("normal-margin");
+            workField.classList.remove("low-margin");
+        }
+    })
+
+    window.addEventListener("resize", function (event) {
+
+        if (window.innerWidth <= 992) {
+            workField.classList.remove("normal-margin");
+            workField.classList.add("low-margin");
+        } else if (window.innerWidth > 992 && check == false) {
+            workField.classList.add("normal-margin");
+            workField.classList.remove("low-margin");
+        } else  if (window.innerWidth > 992 && check == true) {
+            workField.classList.remove("normal-margin");
+            workField.classList.add("low-margin");
+        }
+
+        if (window.innerWidth <= 768) {
+            workField.classList.remove("low-margin");
+            workField.classList.remove("container-max-width");
+        }
     })
 })();
 
