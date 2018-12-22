@@ -238,6 +238,10 @@ body {
   visibility: visible;
 }
 
+.display-off {
+  display: none;
+}
+
 .vertical-menu-off {
   @extend .prop-vertical-menu;
   transform: scaleY(0);
@@ -260,7 +264,7 @@ body {
 
 .more-top-margin {
   @extend .prop-transform;
-  transform: translate(0, 670px);
+  transform: translate(0, 555px);
 }
 
 .active-white-color {
@@ -341,6 +345,21 @@ body {
   top: 0;
 }
 
+.prop-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $white;
+  border: none;
+  padding: 5px 30px 5px 10px;
+  outline: none;
+  cursor: pointer;
+  background-image: url("https://image.flaticon.com/icons/png/128/118/118738.png");
+  //background-image: url("/solo-project-1/images/arrow-down.png");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
 .height-max {
   height: 100vh;
 }
@@ -383,6 +402,33 @@ body {
   .top-margin {
     margin-top: 78px;
   }
+
+  .in-small-is-around {
+    justify-content: space-around;
+    margin: 20px 0;
+    border-bottom: 1px solid $grey-line;
+  }
+
+  .in-small-is-center {
+    justify-content: center;
+  }
+
+  .in-small-padding-left-18 {
+    padding-left: 18px;
+  }
+
+  .in-small-padding-sideway {
+    padding: 0 10px;
+  }
+
+  .in-small-low-margin {
+    margin: 0 5px;
+  }
+
+  .small-sign {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media(min-width: 768px) {
@@ -401,6 +447,15 @@ body {
 
   .visible-low-size {
     visibility: visible;
+  }
+
+  .in-medium-padding-left-18 {
+    padding-left: 18px;
+  }
+
+  .medium-sign {
+    width: 40px;
+    height: 40px;
   }
 }
 

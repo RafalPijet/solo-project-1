@@ -577,6 +577,10 @@ body {
   visibility: visible;
 }
 
+.display-off {
+  display: none;
+}
+
 .vertical-menu-off {
   transform: scaleY(0);
 }
@@ -594,7 +598,7 @@ body {
 }
 
 .more-top-margin {
-  transform: translate(0, 670px);
+  transform: translate(0, 555px);
 }
 
 .active-white-color {
@@ -675,6 +679,20 @@ body {
   color: #999999;
   position: fixed;
   top: 0;
+}
+
+.prop-select, .section--top .cell .money, .section__postback .part-one .window-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: none;
+  padding: 5px 30px 5px 10px;
+  outline: none;
+  cursor: pointer;
+  background-image: url("https://image.flaticon.com/icons/png/128/118/118738.png");
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: right 5px center;
 }
 
 .height-max {
@@ -773,6 +791,29 @@ body {
   .top-margin {
     margin-top: 78px;
   }
+  .in-small-is-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px 0;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .in-small-is-center {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .in-small-padding-left-18 {
+    padding-left: 18px;
+  }
+  .in-small-padding-sideway {
+    padding: 0 10px;
+  }
+  .in-small-low-margin {
+    margin: 0 5px;
+  }
+  .small-sign {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -847,6 +888,13 @@ body {
   }
   .visible-low-size {
     visibility: visible;
+  }
+  .in-medium-padding-left-18 {
+    padding-left: 18px;
+  }
+  .medium-sign {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -1036,6 +1084,13 @@ body {
   font-weight: lighter;
   border: none;
   width: 140px;
+  padding-left: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.component--calendary .date-field .enter-date:nth-of-type(2) {
+  margin-right: 15px;
 }
 
 .component--calendary .date-field::after {
@@ -1047,10 +1102,6 @@ body {
   height: 28px;
   left: 144px;
   top: 7px;
-}
-
-.component--calendary .date-field .enter-date:first-child {
-  padding-left: 19px;
 }
 
 .component--calendary .refresh {
@@ -1156,8 +1207,6 @@ body {
 }
 
 .component__pagination-table .pagination-list li .sign {
-  width: 40px;
-  height: 40px;
   border: none;
   border-radius: 3px;
   font-family: "Roboto Light", arial;
@@ -1252,10 +1301,12 @@ body {
 .component__form-user-data-edit .personal-data .enter-data .user-edit {
   font-family: "Roboto Light", arial;
   height: 40px;
+  width: 100%;
   font-size: 14px;
   line-height: 42px;
   border: none;
   padding-left: 18px;
+  outline: none;
 }
 
 .component__save-button {
@@ -1367,7 +1418,7 @@ body {
 
 .component--menu-mobile .list-item {
   cursor: pointer;
-  height: 4em;
+  height: 3em;
 }
 
 .component--menu-mobile .list-item a {
@@ -1415,10 +1466,6 @@ body {
   margin: 0;
 }
 
-.component--menu-mobile .list-item:nth-of-type(8), .component--menu-mobile .list-item:last-child {
-  height: auto;
-}
-
 /* Sections */
 .section--top {
   line-height: 42px;
@@ -1436,6 +1483,8 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #9c9c9c;
+  padding: 0 30px 0 0;
+  margin-right: 10px;
 }
 
 .section--top .cell .user-names {
@@ -1540,27 +1589,16 @@ body {
   padding-top: 40px;
 }
 
-.section--general .middle .legend {
-  border-radius: 3px;
-  margin: 0 21px;
-}
-
-.section--general .middle .legend .point {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: none;
-  margin-left: 17px;
-}
-
-.section--general .middle .legend .description {
-  font-weight: lighter;
-  margin: 0;
-  padding: 0 17px;
-}
-
 .section--general .middle .chart {
-  padding: 77px 0 54px;
+  padding-bottom: 54px;
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.section--general .middle .chart canvas {
+  width: 100%;
+  max-width: 100%;
 }
 
 .section__details {
@@ -1593,7 +1631,6 @@ body {
   font-size: 14px;
   line-height: 42px;
   font-weight: lighter;
-  padding-left: 18px;
 }
 
 .section__postback .part-one p {
@@ -1620,6 +1657,8 @@ body {
   max-width: 460px;
   color: #a6a6a6;
   border: none;
+  resize: none;
+  outline: none;
 }
 
 .section__postback .part-one .window-select {
@@ -1632,14 +1671,8 @@ body {
 }
 
 .section__postback .part-one .window-select select {
-  max-width: 250px;
+  max-width: 300px;
   width: 100%;
-  background-color: #fff;
-  border: none;
-}
-
-.section__postback .part-two .box {
-  padding-left: 18px;
 }
 
 .section__postback .part-two .box h4 {
@@ -1652,15 +1685,36 @@ body {
 
 .section__postback .part-two .window-work {
   height: 180px;
+  width: 100%;
   overflow: scroll;
 }
 
 .section__postback .part-two .window-work .checkbox-line {
   height: 38px;
+  cursor: pointer;
 }
 
-.section__postback .part-two .window-work .checkbox-line input {
-  margin-left: 15px;
+.section__postback .part-two .window-work .checkbox-line input[type="checkbox"] {
+  position: absolute;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+}
+
+.section__postback .part-two .window-work .checkbox-line input[type="checkbox"] + .icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e3e3e3;
+}
+
+.section__postback .part-two .window-work .checkbox-line input[type="checkbox"] + .icon svg path {
+  fill: #fff;
+}
+
+.section__postback .part-two .window-work .checkbox-line input[type="checkbox"]:checked + .icon {
+  background-color: #04ae00;
 }
 
 .section__postback .part-two .window-work .checkbox-line h5 {
@@ -1668,7 +1722,39 @@ body {
   font-size: 14px;
   font-weight: lighter;
   margin: 0;
-  padding-left: 17px;
+}
+
+.section__postback .part-two .window-work .slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  width: 96%;
+  height: 20px;
+}
+
+.section__postback .part-two .window-work .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: 8px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent #f58220;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.section__postback .part-two .window-work .slider::-webkit-slider-runnable-track {
+  background-color: #a6a6a6;
+  height: 6px;
+}
+
+.section__postback .part-two .box:last-child .window-work h4 {
+  font-weight: lighter;
+}
+
+.section__postback .part-two .box:last-child .window-work h4:last-child {
+  margin-right: 20px;
 }
 
 .section__postback button {

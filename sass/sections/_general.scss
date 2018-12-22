@@ -27,27 +27,16 @@
   .middle {
     padding-top: 40px;
 
-    .legend {
-      border-radius: 3px;
-      margin: 0 21px;
-
-      .point {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: none;
-        margin-left: 17px;
-      }
-
-      .description {
-        font-weight: lighter;
-        margin: 0;
-        padding: 0 17px;
-      }
-    }
-
     .chart {
-      padding: 77px 0 54px;
+      padding-bottom: 54px;
+      display: block;
+      overflow-x: auto;
+      width: 100%;
+
+      canvas {
+        width: 100%;
+        max-width: 100%;
+      }
     }
   }
 }

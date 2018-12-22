@@ -27,10 +27,12 @@
       .user-edit {
         font-family: $font-roboto-light;
         height: 40px;
+        width: 100%;
         font-size: 14px;
         line-height: 42px;
         border:none;
         padding-left: 18px;
+        outline: none;
       }
     }
   }

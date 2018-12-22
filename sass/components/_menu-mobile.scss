@@ -7,7 +7,7 @@
 
   .list-item {
     cursor: pointer;
-    height: 4em;
+    height: 3em;
 
     a {
       font-family: $font-roboto-light;
@@ -57,9 +57,5 @@
       font-size: $font-size-26;
       margin: 0;
     }
-  }
-
-  .list-item:nth-of-type(8), .list-item:last-child {
-    height: auto;
   }
 }

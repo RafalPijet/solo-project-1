@@ -7,7 +7,6 @@
     font-size: 14px;
     line-height: 42px;
     font-weight: lighter;
-    padding-left: 18px;
     @extend .bottom-line;
 
     p {
@@ -33,6 +32,8 @@
         max-width: 460px;
         color: $grey-title;
         border: none;
+        resize: none;
+        outline: none;
       }
     }
 
@@ -45,10 +46,9 @@
       margin-bottom: 39px;
 
       select {
-        max-width: 250px;
+        @extend .prop-select;
+        max-width: 300px;
         width: 100%;
-        background-color: $white;
-        border: none;
       }
     }
   }
@@ -56,8 +56,6 @@
   .part-two {
     @extend .bottom-line;
     .box {
-      padding-left: 18px;
-
       h4 {
         margin-bottom: 0;
       }
@@ -69,13 +67,36 @@
 
     .window-work {
       height: 180px;
+      width: 100%;
       overflow: scroll;
 
       .checkbox-line {
         height: 38px;
+        cursor: pointer;
 
-        input {
-          margin-left: 15px;
+        input[type = "checkbox"] {
+          position: absolute;
+          margin: 0;
+          width: 18px;
+          height: 18px;
+          opacity: 0;
+
+          + .icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $grey-line;
+
+            svg {
+              path {
+                fill: $white;
+              }
+            }
+          }
+
+          &:checked + .icon {
+            background-color: $online;
+          }
         }
 
         h5 {
@@ -83,7 +104,43 @@
           font-size: 14px;
           font-weight: lighter;
           margin: 0;
-          padding-left: 17px;
+        }
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        width: 96%;
+        height: 20px;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        margin-top: 8px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 14px 0 14px 22px;
+        border-color: transparent transparent transparent $orange-icon;
+        transform: rotate(-90deg);
+        cursor: pointer;
+      }
+
+      .slider::-webkit-slider-runnable-track {
+        background-color: $grey-title;
+        height: 6px;
+      }
+    }
+
+    .box:last-child {
+      .window-work {
+        h4 {
+          font-weight: lighter;
+        }
+
+        h4:last-child {
+          margin-right: 20px;
         }
       }
     }
