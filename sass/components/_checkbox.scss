@@ -14,18 +14,41 @@
 
   .checkbox-line {
     height: 38px;
+    cursor: pointer;
 
-    input {
-      margin-left: 15px;
-      cursor: pointer;
+    input[type = "checkbox"] {
+      position: absolute;
+      margin: 0;
+      width: 18px;
+      height: 18px;
+      opacity: 0;
+
+      + .icon {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $grey-line;
+
+        svg {
+          width: 18px;
+          height: 18px;
+          path {
+            fill: $white;
+          }
+        }
+      }
+
+      &:checked + .icon {
+        background-color: $online;
+      }
     }
+
 
     h5 {
       font-family: $font-roboto-light;
       font-size: 14px;
       font-weight: lighter;
       margin: 0;
-      padding-left: 17px;
     }
 
     &:hover {
@@ -34,6 +57,10 @@
       svg {
         visibility: visible;
         cursor: pointer;
+      }
+
+      .icon {
+        background-color: $white;
       }
     }
   }

@@ -157,6 +157,24 @@ body {
   }
 }
 
+.icon-table-grey {
+  height: 18px;
+  width: 18px;
+
+  path {
+    fill: $grey-light;
+  }
+}
+
+.icon-table-orange {
+  height: 18px;
+  width: 18px;
+
+  path {
+    fill: $orange-icon;
+  }
+}
+
 .icon-table {
   height: 18px;
   width: 18px;
@@ -174,36 +192,11 @@ body {
   }
 }
 
-.icon-table-orange {
-  @extend .icon-table;
-
-  path {
-    fill: $orange-icon;
-  }
-}
-
 .icon-link-white {
   @extend .icon-table;
 
   path {
     fill: $white;
-  }
-}
-
-.icon-table-grey {
-  @extend .icon-table;
-
-  path {
-  fill: $grey-light;
-  }
-}
-
-.icon-checkbox-blue {
-  height: 13px;
-  width: 13px;
-
-  path {
-    fill: $blue-user;
   }
 }
 
@@ -364,6 +357,10 @@ body {
   height: 100vh;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .prop-comp-menu {
   background-color: $aside-back;
   margin: 0;
@@ -380,6 +377,12 @@ body {
   left: 0;
   z-index: 7;
   @extend .shadow-menu;
+}
+
+.prop-roboto-light-14 {
+  font-family: $font-roboto-light;
+  font-size: 14px;
+  color: $grey-title;
 }
 
 @media(max-width: 767px) {
@@ -429,10 +432,18 @@ body {
     width: 20px;
     height: 20px;
   }
+
+  .in-small-full-width {
+    width: 100%;
+  }
 }
 
 @media(min-width: 768px) {
   @include grid("md");
+
+  .display-md-on {
+    display: inline;
+  }
 
   .normal-margin {
     transition-property: margin-left, max-width;
@@ -457,6 +468,23 @@ body {
     width: 40px;
     height: 40px;
   }
+
+  .width-md-500 {
+    max-width: 500px;
+  }
+
+  .height-md-82 {
+    height: 82px;
+  }
+
+  .icon-checkbox-blue {
+    height: 13px;
+    width: 13px;
+
+    path {
+      fill: $blue-user;
+    }
+  }
 }
 
 @media(min-width: 992px) {
@@ -465,8 +493,16 @@ body {
   .visible-big-size {
     visibility: visible;
   }
+
+  .width-lg-650 {
+    max-width: 650px;
+  }
 }
 
 @media(min-width: 1200px) {
   @include grid("xl");
+
+  .width-xl-758 {
+    max-width: 758px;
+  }
 }

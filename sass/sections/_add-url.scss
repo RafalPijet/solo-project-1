@@ -1,4 +1,4 @@
-.section__add-banners {
+.section__add-url {
   width: 100%;
   max-width: 1074px;
   background-color: $white;
@@ -58,23 +58,6 @@
       width: 100%;
     }
 
-    .box-next {
-      max-width: 335px;
-      width: 100%;
-
-      .input-middle {
-        @extend .prop-input-size;
-
-        select {
-          @extend .prop-roboto-light-14;
-          @extend .prop-select;
-          padding-left: 15px;
-          margin-right: 10px;
-          width: 100%;
-        }
-      }
-    }
-
     .margin-h4 {
       margin: 26px 0 19px;
       line-height: 17px;
@@ -83,9 +66,12 @@
 
   .part-two {
     @extend .bottom-line;
+    padding: 0 18px;
 
-    &>div:first-child {
-      border-right: 1px solid $grey-line;
+    &>div {
+      >div {
+        max-width: none;
+      }
     }
   }
 
