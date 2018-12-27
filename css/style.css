@@ -376,7 +376,7 @@ body {
       flex-wrap: wrap;
 }
 
-.shadow-content, .section--general, .section__details, .section__links, .section__banners, .section__personal-data, .section__payout, .section__postback, .section__add-banners, .section__add-url {
+.shadow-content, .section--general, .section__details, .section__links, .section__banners, .section__personal-data, .section__payout, .section__postback, .section__add-banners, .section__add-url, .section__online-chat {
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -620,7 +620,7 @@ body {
   filter: invert(100%);
 }
 
-.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit, .component__table-payout .payout-table tr, .section__postback .part-one, .section__postback .part-two, .section__add-banners .part-one, .section__add-banners .part-two, .section__add-url .part-one, .section__add-url .part-two {
+.bottom-line, .component--calendary, .component__table-url .links-table .row-table, .component__title-line, .component__table-detail .detail-table tr, .component__form-user-data-edit, .component__table-payout .payout-table tr, .section__postback .part-one, .section__postback .part-two, .section__add-banners .part-one, .section__add-banners .part-two, .section__add-url .part-one, .section__add-url .part-two, .section__online-chat .part-one, .section__online-chat .part-two {
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -666,7 +666,7 @@ body {
   transition-duration: .3s;
 }
 
-.prop-input-size, .section__add-banners .part-one .box .input-long, .section__add-banners .part-one .box-low .input-short, .section__add-banners .part-one .box-next .input-middle, .section__add-banners .part-three .input-link, .section__add-url .part-one .box .input-long, .section__add-url .part-one .box-low .input-short, .section__add-url .part-three .input-link {
+.prop-input-size, .section__add-banners .part-one .box .input-long, .section__add-banners .part-one .box-low .input-short, .section__add-banners .part-one .box-next .input-middle, .section__add-banners .part-three .input-link, .section__add-url .part-one .box .input-long, .section__add-url .part-one .box-low .input-short, .section__add-url .part-three .input-link, .section__online-chat .part-three .input-link {
   width: 100%;
   height: 40px;
   border: 1px solid #e3e3e3;
@@ -721,7 +721,7 @@ body {
   z-index: 7;
 }
 
-.prop-roboto-light-14, .section__add-banners .part-one .box .input-long input, .section__add-banners .part-one .box .input-long select, .section__add-banners .part-one .box-low .input-short select, .section__add-banners .part-one .box-next .input-middle select, .section__add-banners .part-three .input-link input, .section__add-url .part-one .box .input-long input, .section__add-url .part-one .box .input-long select, .section__add-url .part-one .box-low .input-short select, .section__add-url .part-three .input-link input {
+.prop-roboto-light-14, .section__add-banners .part-one .box .input-long input, .section__add-banners .part-one .box .input-long select, .section__add-banners .part-one .box-low .input-short select, .section__add-banners .part-one .box-next .input-middle select, .section__add-banners .part-three .input-link input, .section__add-url .part-one .box .input-long input, .section__add-url .part-one .box .input-long select, .section__add-url .part-one .box-low .input-short select, .section__add-url .part-three .input-link input, .section__online-chat .part-three .input-link input {
   font-family: "Roboto Light", arial;
   font-size: 14px;
   color: #a6a6a6;
@@ -2054,6 +2054,136 @@ body {
   border-radius: 50%;
   left: 30px;
   top: 0;
+}
+
+.section__online-chat {
+  width: 100%;
+  max-width: 1074px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.section__online-chat svg {
+  margin-right: 15px;
+}
+
+.section__online-chat .part-one {
+  padding-left: 17px;
+  height: 93px;
+}
+
+.section__online-chat .part-one > div {
+  padding-left: 19px;
+}
+
+.section__online-chat .part-one h1 {
+  font-family: "Roboto Medium", arial;
+  font-size: 30px;
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.section__online-chat .part-one .online {
+  width: 43px;
+  height: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background-color: #04ae00;
+}
+
+.section__online-chat .part-one .online h6 {
+  margin: 0;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.section__online-chat .part-two {
+  padding-left: 17px;
+}
+
+.section__online-chat .part-two .manager-text {
+  background-color: #f3f3f1;
+  border-radius: 3px;
+  margin: 15px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+
+.section__online-chat .part-two .manager-text:before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: -10px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 14px 0 14px 15px;
+  border-color: transparent transparent transparent #f3f3f1;
+}
+
+.section__online-chat .part-two .manager-text h4 {
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 13px;
+}
+
+.section__online-chat .part-two .user-text {
+  background-color: #bababa;
+  border-radius: 3px;
+  margin: 15px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+}
+
+.section__online-chat .part-two .user-text:after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 24px;
+  left: 276px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 14px 0 14px 15px;
+  border-color: transparent transparent transparent #bababa;
+  transform: rotate(180deg);
+}
+
+.section__online-chat .part-two .user-text h4 {
+  font-family: "Roboto Light", arial;
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 13px;
+  color: #fff;
+}
+
+.section__online-chat .part-two div:last-child {
+  margin-bottom: 150px;
+}
+
+.section__online-chat .part-three .input-link {
+  width: 100%;
+}
+
+.section__online-chat .part-three .input-link img {
+  padding-left: 13px;
+}
+
+.section__online-chat .part-three .input-link input {
+  border: none;
+  padding-left: 15px;
+  outline: none;
 }
 
 /* Pages / Views */

@@ -1,0 +1,132 @@
+.section__online-chat {
+  width: 100%;
+  max-width: 1074px;
+  background-color: $white;
+  margin: 0 auto;
+  @extend .shadow-content;
+
+  svg {
+    margin-right: 15px;
+  }
+
+  .part-one {
+    padding-left: 17px;
+    height: 93px;
+    @extend .bottom-line;
+
+    & > div {
+      padding-left: 19px;
+    }
+
+    h1 {
+      font-family: $font-roboto-medium;
+      font-size: 30px;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+
+    .online {
+      width: 43px;
+      height: 18px;
+      color: $white;
+      border-radius: 3px;
+      border: none;
+      background-color: $online;
+
+      h6 {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .part-two {
+    padding-left: 17px;
+    @extend .bottom-line;
+
+    .manager-text {
+      background-color: $grey-back;
+      border-radius: 3px;
+      margin: 15px 0;
+      width: fit-content;
+      position: relative;
+      z-index: 2;
+
+      &:before {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        top: -10px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 14px 0 14px 15px;
+        border-color: transparent transparent transparent $grey-back;
+      }
+
+      h4 {
+        font-family: $font-roboto-light;
+        font-size: 14px;
+        font-weight: lighter;
+        margin: 0;
+        padding: 13px;
+      }
+    }
+
+    .user-text {
+      background-color: $grey-back-user;
+      border-radius: 3px;
+      margin: 15px 0;
+      width: fit-content;
+      position: relative;
+      z-index: 2;
+
+      &:after {
+        position: absolute;
+        z-index: 1;
+        content: "";
+        top: 24px;
+        left: 276px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 14px 0 14px 15px;
+        border-color: transparent transparent transparent $grey-back-user;
+        transform: rotate(180deg);
+      }
+
+      h4 {
+        font-family: $font-roboto-light;
+        font-size: 14px;
+        font-weight: lighter;
+        margin: 0;
+        padding: 13px;
+        color: $white;
+      }
+    }
+
+    div:last-child {
+      margin-bottom: 150px;
+    }
+  }
+
+  .part-three {
+    .input-link {
+      @extend .prop-input-size;
+      width: 100%;
+
+      img {
+        padding-left: 13px;
+      }
+
+      input {
+        @extend .prop-roboto-light-14;
+        border: none;
+        padding-left: 15px;
+        outline: none;
+      }
+    }
+  }
+}
