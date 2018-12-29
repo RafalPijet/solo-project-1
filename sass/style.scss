@@ -35,8 +35,41 @@
 @import "sections/left-short";
 @import "sections/mobile-menu";
 @import "sections/online-chat";
+@import "sections/login";
+@import "sections/quit";
 
 /* Pages / Views */
 
+.begin {
+  @extend .prop-overlay;
+}
 
+.begin.show {
+  display: flex;
+}
+
+.overlay {
+  @extend .prop-overlay;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  //max-width: 600px;
+  margin: auto;
+  background-color: $white;
+  position: relative;
+  //padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
 

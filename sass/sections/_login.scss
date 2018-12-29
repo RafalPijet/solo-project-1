@@ -1,0 +1,27 @@
+.section__login {
+  max-width: 722px;
+  width: 100%;
+  background-color: $white;
+  margin: 0 auto;
+  @extend .shadow-content;
+
+  .box {
+    max-width: 212px;
+    margin: 47px 0;
+
+    svg {
+      margin: 0 10px 0 15px;
+    }
+
+    input {
+      @extend  .prop-roboto-light-14;
+      border: none;
+      width: fit-content;
+      outline: none;
+    }
+  }
+
+  .enter-button {
+    width: 167px;
+  }
+}

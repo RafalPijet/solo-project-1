@@ -376,7 +376,7 @@ body {
       flex-wrap: wrap;
 }
 
-.shadow-content, .section--general, .section__details, .section__links, .section__banners, .section__personal-data, .section__payout, .section__postback, .section__add-banners, .section__add-url, .section__online-chat {
+.shadow-content, .section--general, .section__details, .section__links, .section__banners, .section__personal-data, .section__payout, .section__postback, .section__add-banners, .section__add-url, .section__online-chat, .section__login, .section__quit {
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -721,10 +721,27 @@ body {
   z-index: 7;
 }
 
-.prop-roboto-light-14, .section__add-banners .part-one .box .input-long input, .section__add-banners .part-one .box .input-long select, .section__add-banners .part-one .box-low .input-short select, .section__add-banners .part-one .box-next .input-middle select, .section__add-banners .part-three .input-link input, .section__add-url .part-one .box .input-long input, .section__add-url .part-one .box .input-long select, .section__add-url .part-one .box-low .input-short select, .section__add-url .part-three .input-link input, .section__online-chat .part-three .input-link input {
+.prop-roboto-light-14, .section__add-banners .part-one .box .input-long input, .section__add-banners .part-one .box .input-long select, .section__add-banners .part-one .box-low .input-short select, .section__add-banners .part-one .box-next .input-middle select, .section__add-banners .part-three .input-link input, .section__add-url .part-one .box .input-long input, .section__add-url .part-one .box .input-long select, .section__add-url .part-one .box-low .input-short select, .section__add-url .part-three .input-link input, .section__online-chat .part-three .input-link input, .section__login .box input {
   font-family: "Roboto Light", arial;
   font-size: 14px;
   color: #a6a6a6;
+}
+
+.prop-overlay, .begin, .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -1602,6 +1619,7 @@ body {
 
 .section--left .second .cell {
   position: relative;
+  cursor: pointer;
 }
 
 .section--left .second .cell .user-names {
@@ -1984,6 +2002,7 @@ body {
 
 .section__left-short .second .cell {
   position: relative;
+  cursor: pointer;
 }
 
 .section__left-short .second .cell::after {
@@ -2036,6 +2055,7 @@ body {
 
 .section__mobile-menu .horizontal-menu .second .cell {
   position: relative;
+  cursor: pointer;
 }
 
 .section__mobile-menu .horizontal-menu .second .cell .user-names {
@@ -2186,5 +2206,73 @@ body {
   outline: none;
 }
 
+.section__login {
+  max-width: 722px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.section__login .box {
+  max-width: 212px;
+  margin: 47px 0;
+}
+
+.section__login .box svg {
+  margin: 0 10px 0 15px;
+}
+
+.section__login .box input {
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+}
+
+.section__login .enter-button {
+  width: 167px;
+}
+
+.section__quit {
+  max-width: 360px;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.section__quit .more-height {
+  height: 70px;
+}
+
+.section__quit .next div {
+  height: 85px;
+  padding-right: 21px;
+}
+
 /* Pages / Views */
+.begin.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
