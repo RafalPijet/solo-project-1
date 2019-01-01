@@ -404,6 +404,37 @@ body {
   display: none;
 }
 
+.begin {
+  @extend .prop-overlay;
+
+  &.begin.show {
+    display: flex;
+  }
+}
+
+.overlay {
+  @extend .prop-overlay;
+
+  &.overlay.show {
+    display: flex;
+  }
+
+  &.overlay::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modal {
+  margin: auto;
+  background-color: $white;
+  position: relative;
+  display: none;
+
+  &.modal.show {
+    display: block;
+  }
+}
+
 @media(max-width: 767px) {
   @include grid("sm");
 

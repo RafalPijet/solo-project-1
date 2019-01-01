@@ -10,7 +10,7 @@
     "init:dirs": "mkdir -p sass/components sass/pages sass/sections css vendor images js fonts",
     "init:files": "touch index.html styleguide.html sass/style.scss sass/_layout.scss sass/_mixins.scss sass/_normalize.scss sass/_variables.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:* test",
     "build:clean": "rimraf css/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli  css/style.css",
