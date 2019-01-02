@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Solo project">
+    <meta name="author" content="Rafał Pijet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo project</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <aside class="section--left height-max visible-big-size hidden-low-size" id="menu-left">
+        <div class="first row flex-around flex-center-align">
+            <img class="natural" src="images/logo.png" alt="sorry">
+            <img class="natural" id="hamb-normal" src="images/hamburger.png" alt="sorry">
+        </div>
+        <ul class="component--menu">
+            <li class="list-item"><a href="index.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+                        <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,
+                            0.4l-2.3,1.6l0.9-2.7l0.2-0.7L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,
+                            3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"/>
+                    </svg>
+                    <h5 class="item">General</h5>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="details.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                        <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,
+                            3H1V1h4V3z M13,3H6V1h7V3z"/>
+                    </svg>
+                    <h5 class="item">Details</h5>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="links.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,
+                            4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,
+                            3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                    </svg>
+                    <h5 class="item">Links</h5>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="banners.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                        <path d="M0,6h6V0H0V6z M1,1h4v4H1V1z M8,0v8h6V0H8z M13,7H9V1h4V7z M0,13h6V8H0V13z M1,
+                            9h4v3H1V9z M8,13h6v-3H8V13z M9,11h4v1H9V11z"/>
+                    </svg>
+                    <h5 class="item">Banners</h5>
+                </div></a>
+            </li>
+            <li class="list-item active-item-menu"><a href="personal_data.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="orange-line"></div>
+                    <svg class="icon-menu icon-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 9 14" style="enable-background:new 0 0 9 14;" xml:space="preserve">
+                        <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,3.1,7,
+                            4.5S5.9,7,4.5,7S2,5.9,2,4.5S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,
+                            11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1C9,10.9,9,9.1,7.7,7.7z"/>
+                    </svg>
+                    <h5 class="item active-white-color">Personal data</h5>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="payout.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                        <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,2.5-2.5v-8C13,1.1,
+                            11.9,0,10.5,0z M1,10.5v-8C1,1.7,1.7,1,2.5,1H6v2H5C3.9,3,3,3.9,3,5s0.9,2,2,
+                            2h1v2H4v1h2v2H2.5C1.7,12,1,11.3,1,10.5z M6,4v2H5C4.4,6,4,5.6,4,5s0.4-1,1-1H6zM7,7h1c0.6,0,1,
+                            0.4,1,1c0,0.6-0.4,1-1,1H7V7z M12,10.5c0,0.8-0.7,1.5-1.5,1.5H7v-2h1c1.1,0,2-0.9,
+                            2-2c0-1.1-0.9-2-2-2H7V4h2V3H7V1h3.5C11.3,1,12,1.7,12,2.5V10.5z"/>
+                    </svg>
+                    <h5 class="item">Payout</h5>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="postback.html">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 15" style="enable-background:new 0 0 14 15;" xml:space="preserve">
+                        <path d="M7.5,4H2.7l2.1-2.1L4.1,1.1L0.8,4.5l3.4,3.4l0.7-0.7L2.7,5h4.8C10,5,12,7,12,9.5S10,14,7.5,
+                            14H1v1h6.5c3,0,5.5-2.5,5.5-5.5C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z"/>
+                    </svg>
+                    <h5 class="item">Postback</h5>
+                </div></a>
+            </li>
+        </ul>
+        <div class="second">
+            <h5 class="status text-upper">your manager</h5>
+            <div class="cell row" id="left-manager">
+                <img class="natural" src="images/manager.png" alt="sorry">
+                <h5 class="user-names">Michael E.</h5>
+            </div>
+        </div>
+    </aside>
+    <aside class="section__left-short height-max hidden-big-size visible-low-size hidden-low-size" id="menu-left-short">
+        <div class="first row flex-around flex-center-align">
+            <img class="natural" id="hamb-short" src="images/hamburger.png" alt="sorry">
+        </div>
+        <ul class="component--menu">
+            <li class="list-item"><a href="index.html" title="General">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+                        <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,
+                            0.4l-2.3,1.6l0.9-2.7l0.2-0.7L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,
+                            3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="details.html" title="Details">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                        <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,
+                            3H1V1h4V3z M13,3H6V1h7V3z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="links.html" title="Links">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,
+                            4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,
+                            3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="banners.html" title="Banners">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                        <path d="M0,6h6V0H0V6z M1,1h4v4H1V1z M8,0v8h6V0H8z M13,7H9V1h4V7z M0,13h6V8H0V13z M1,
+                        9h4v3H1V9z M8,13h6v-3H8V13z M9,11h4v1H9V11z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item active-item-menu"><a href="personal_data.html" title="Personal data">
+                <div class="row flex-start flex-center-align">
+                    <div class="orange-line"></div>
+                    <svg class="icon-menu icon-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 9 14" style="enable-background:new 0 0 9 14;" xml:space="preserve">
+                        <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,3.1,7,
+                            4.5S5.9,7,4.5,7S2,5.9,2,4.5S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,
+                            11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1C9,10.9,9,9.1,7.7,7.7z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="payout.html" title="Payout">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                        <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,2.5-2.5v-8C13,1.1,
+                            11.9,0,10.5,0z M1,10.5v-8C1,1.7,1.7,1,2.5,1H6v2H5C3.9,3,3,3.9,3,5s0.9,2,2,
+                            2h1v2H4v1h2v2H2.5C1.7,12,1,11.3,1,10.5z M6,4v2H5C4.4,6,4,5.6,4,5s0.4-1,1-1H6z M7,7h1c0.6,0,
+                            1,0.4,1,1c0,0.6-0.4,1-1,1H7V7z M12,10.5c0,0.8-0.7,1.5-1.5,1.5H7v-2h1c1.1,0,2-0.9,
+                            2-2c0-1.1-0.9-2-2-2H7V4h2V3H7V1h3.5C11.3,1,12,1.7,12,2.5V10.5z"/>
+                    </svg>
+                </div></a>
+            </li>
+            <li class="list-item"><a href="postback.html" title="Postback">
+                <div class="row flex-start flex-center-align">
+                    <div class="hidden orange-line"></div>
+                    <svg class="icon-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 14 15" style="enable-background:new 0 0 14 15;" xml:space="preserve">
+                        <path d="M7.5,4H2.7l2.1-2.1L4.1,1.1L0.8,4.5l3.4,3.4l0.7-0.7L2.7,5h4.8C10,5,12,7,12,9.5S10,14,7.5,
+                            14H1v1h6.5c3,0,5.5-2.5,5.5-5.5C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z"/>
+                    </svg>
+                </div></a>
+            </li>
+        </ul>
+        <div class="second row flex-center flex-center-align">
+            <div class="cell row" id="left-manager-short">
+                <img class="" src="images/manager.png" alt="sorry">
+            </div>
+        </div>
+    </aside>
+    <nav class="section__mobile-menu show-menu hidden-low-size">
+        <ul class="horizontal-menu">
+            <li>
+                <div class="first row flex-between flex-center-align">
+                    <img class="natural" src="images/logo-biger.png" alt="sorry">
+                    <img class="natural" id="hambMobile" src="images/hamburger-biger.png" alt="sorry">
+                </div>
+            </li>
+            <li class="vertical-menu-off" id="vartical">
+                <ul class="component--menu-mobile">
+                    <li class="list-item row flex-center-align"><a href="index.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+                                <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,
+                                    2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7L6.1,8.6L3.9,
+                                    7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,
+                                    3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">General</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item row flex-center-align"><a href="details.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                                <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,
+                                0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">Details</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item row flex-center-align"><a href="links.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                                <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,
+                                    4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,
+                                    3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">Links</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item row flex-center-align"><a href="banners.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                                <path d="M0,6h6V0H0V6z M1,1h4v4H1V1z M8,0v8h6V0H8z M13,7H9V1h4V7z M0,13h6V8H0V13z M1,
+                                9h4v3H1V9z M8,13h6v-3H8V13z M9,11h4v1H9V11z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">Banners</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item active-item-menu row flex-center-align"><a href="personal_data.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="orange-line"></div>
+                            <svg class="icon-white" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 9 14" style="enable-background:new 0 0 9 14;" xml:space="preserve">
+                                <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,
+                                    3.1,7,4.5S5.9,7,4.5,7S2,5.9,2,4.5S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,
+                                    12.9V13H1v-0.1C1,11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1C9,10.9,9,
+                                    9.1,7.7,7.7z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item active-white-color text-upper">Personal data</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item row flex-center-align"><a href="payout.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                                <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,
+                                    2.5-2.5v-8C13,1.1,11.9,0,10.5,0z M1,10.5v-8C1,1.7,1.7,1,2.5,1H6v2H5C3.9,3,3,3.9,3,
+                                    5s0.9,2,2,2h1v2H4v1h2v2H2.5C1.7,12,1,11.3,1,10.5z M6,4v2H5C4.4,6,4,5.6,4,5s0.4-1,
+                                    1-1H6zM7,7h1c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H7V7z M12,10.5c0,0.8-0.7,1.5-1.5,
+                                    1.5H7v-2h1c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2H7V4h2V3H7V1h3.5C11.3,1,12,1.7,12,
+                                    2.5V10.5z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">Payout</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                    <li class="list-item row flex-center-align"><a href="postback.html">
+                        <div class="row flex-start flex-center-align">
+                            <div class="hidden orange-line"></div>
+                            <svg class="icon-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 14 15" style="enable-background:new 0 0 14 15;" xml:space="preserve">
+                                <path d="M7.5,4H2.7l2.1-2.1L4.1,1.1L0.8,4.5l3.4,3.4l0.7-0.7L2.7,5h4.8C10,5,12,7,12,
+                                    9.5S10,14,7.5,14H1v1h6.5c3,0,5.5-2.5,5.5-5.5C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z"/>
+                            </svg>
+                            <div class="row flex-center">
+                                <h5 class="item text-upper">Postback</h5>
+                            </div>
+                        </div></a>
+                    </li>
+                </ul>
+                <div class="second">
+                    <h5 class="status text-upper">your manager</h5>
+                    <div class="cell row" id="top-manager">
+                        <img class="natural" src="images/manager.png" alt="sorry">
+                        <h5 class="user-names">Michael E.</h5>
+                    </div>
+                </div>
+                <div class="section--top last-line row flex-end" id="mobile-menu-line">
+                    <div class="cell row flex-center-align">
+                        <svg class="icon in-small-low-margin" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17 18" style="enable-background:new 0 0 17 18;" xml:space="preserve">
+                            <path d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,
+                                16.9,1.1,18,2.5,18h10c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,
+                                1.5h-10C1.7,17,1,16.3,1,15.5v-8C1,6.7,1.7,6,2.5,6h10C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,
+                                10.1,6,11.5S7.1,14,8.5,14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z"/>
+                        </svg>
+                        <select name="select-money" id="user-money-mobile" class="money">
+                            <option value="$1,500.00">$1,500.00</option>
+                            <option value="$1,750.00">$1,750.00</option>
+                            <option value="$2,000.00">$2,000.00</option>
+                            <option value="$2,250.00">$2,250.00</option>
+                            <option value="$2,500.00">$2,500.00</option>
+                        </select>
+                    </div>
+                    <div class="cell row flex-center-align">
+                        <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
+                            <path d="M17,16l-2.4-3.7V6.5c0-3-2.5-5.5-5.5-5.5S3.6,3.5,3.6,6.5v5.8L1.1,16h5.5c0.2,1.1,1.2,
+                                2,2.4,2s2.2-0.9,2.4-2H17z M4.6,6.5C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,
+                                13h9.5l1.3,2H3L4.3,13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8C10.3,16.6,9.7,17,9.1,17z"/>
+                        </svg>
+                    </div>
+                    <div class="cell row flex-center-align">
+                        <svg class="icon in-small-low-margin" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+                            <path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,
+                                8.9,7,7.5S8.1,5,9.5,5S12,6.1,12,7.5S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,
+                                18S18,14.2,18,9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7c1.1,1.1,1.1,2.7,
+                                1.1,4.5l0,0.3c-1,0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,
+                                12,5,13.7,5,15.5c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,
+                                14,15.5z"/>
+                        </svg>
+                        <h5 class="user-names">Leonardo Dicaprio</h5>
+                    </div>
+                    <div class="cell row flex-center-align" id="quit-icon-mobile">
+                        <svg class="icon in-small-low-margin" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve">
+                            <path d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,
+                            14H1V1h9v3h1V0H0v15h11v-4h-1V14z"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <nav class="section--top prop-sect-top hidden-low-size visible-low-size" id="menu-top">
+        <div class="row top-height flex-end" id="top-menu-line">
+            <div class="cell row flex-center-align">
+                <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 17 18" style="enable-background:new 0 0 17 18;" xml:space="preserve">
+                    <path d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,16.9,1.1,
+                        18,2.5,18h10c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,1.5h-10C1.7,17,1,16.3,1,
+                        15.5v-8C1,6.7,1.7,6,2.5,6h10C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,10.1,6,11.5S7.1,14,8.5,
+                        14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z"/>
+                </svg>
+                <select name="select-money" id="user-money" class="money">
+                    <option value="$1,500.00">$1,500.00</option>
+                    <option value="$1,750.00">$1,750.00</option>
+                    <option value="$2,000.00">$2,000.00</option>
+                    <option value="$2,250.00">$2,250.00</option>
+                    <option value="$2,500.00">$2,500.00</option>
+                </select>
+            </div>
+            <div class="cell row flex-center-align">
+                <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
+                    <path d="M17,16l-2.4-3.7V6.5c0-3-2.5-5.5-5.5-5.5S3.6,3.5,3.6,6.5v5.8L1.1,16h5.5c0.2,1.1,1.2,2,2.4,
+                        2s2.2-0.9,2.4-2H17z M4.6,6.5C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,13h9.5l1.3,2H3L4.3,
+                        13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8C10.3,16.6,9.7,17,9.1,17z"/>
+                </svg>
+            </div>
+            <div class="cell row flex-center-align">
+                <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+                    <path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,8.9,7,
+                        7.5S8.1,5,9.5,5S12,6.1,12,7.5S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,18S18,14.2,18,
+                        9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7c1.1,1.1,1.1,2.7,1.1,4.5l0,0.3c-1,
+                        0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,12,5,13.7,5,15.5
+                        c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
+                </svg>
+                <h5 class="user-names">Leonardo Dicaprio</h5>
+            </div>
+            <div class="cell row flex-center-align" id="quit-icon">
+                <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve">
+                    <path d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,
+                        14H1V1h9v3h1V0H0v15h11v-4h-1V14z"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <div class="container normal-margin top-margin no-more-top-margin" id="field">
+        <section class="section__personal-data">
+            <div class="component__title-line row flex-center-align">
+                <h4 class="title text-upper">personal data</h4>
+            </div>
+            <form class="component__form-user-data-edit row flex-center">
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="firstname">Name</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="text" id="firstname" placeholder="Leonardo">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="surname">Surname</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="text" id="surname" placeholder="Dicaprio">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="email">E-mail</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="email" id="email" placeholder="leo@gmail.com">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="phone">Phone number</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="email" id="phone" placeholder="+1 432 555 00 44">
+                    </div>
+                </div>
+            </form>
+            <form class="component__form-user-data-edit row flex-center">
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="skype">Name</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="text" id="skype" placeholder="Leonardo.D">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16 text-upper" for="icq">icq</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="text" id="icq">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="msn">Msn</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="email" id="msn">
+                    </div>
+                </div>
+            </form>
+            <form class="component__form-user-data-edit row flex-center">
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="wallet">Wallet</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="text" id="wallet">
+                    </div>
+                </div>
+            </form>
+            <form class="component__form-user-data-edit row flex-center">
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="password">Password</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="password" id="password">
+                    </div>
+                </div>
+                <div class="personal-data row col-md-6 col-sm-12 in-small-is-center">
+                    <div class="col-md-4 col-sm-12 row in-small-is-center">
+                        <label class="component__h4-size-16" for="repeat_password">Repeat</label>
+                    </div>
+                    <div class="enter-data col-md-8 col-sm-12">
+                        <input class="user-edit" type="password" id="repeat_password">
+                    </div>
+                </div>
+            </form>
+            <div class="component__save-button row flex-center flex-center-align">
+                <button class="save">Save</button>
+            </div>
+        </section>
+    </div>
+    <div class="begin" id="begin">
+        <section class="modal section__login" id="login">
+            <div class="component__title-line row flex-center-align flex-between">
+                <h4 class="title text-upper">login</h4>
+            </div>
+            <div class="part-one row flex-center-align flex-around">
+                <div class="box prop-input-size row flex-center-align flex-start">
+                    <svg class="icon-table-grey" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 15 16" style="enable-background:new 0 0 15 16;" xml:space="preserve">
+                        <path d="M7.5,9c2.2,0,4-1.8,4-4c0-2.2-1.8-4-4-4s-4,1.8-4,4C3.5,7.2,5.3,9,7.5,9z M7.5,2c1.7,0,3,
+                            1.3,3,3s-1.3,3-3,3s-3-1.3-3-3S5.8,2,7.5,2z M7.5,10c-3,0-5.6,2-6.3,4.9l1,0.3C2.8,12.7,5,11,
+                            7.5,11c2.5,0,4.7,1.7,5.3,4.1l1-0.3C13.1,12,10.5,10,7.5,10z"/>
+                    </svg>
+                    <input type="text" value="Leonardo Dicaprio" readonly>
+                </div>
+                <div class="box prop-input-size row flex-center-align flex-start">
+                    <svg class="icon-table-grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 22 14" style="enable-background:new 0 0 22 14;" xml:space="preserve">
+                        <path d="M21.1,7.4l-2.6-2.6l-2,2L14.7,5h-2.1c-1-2.8-3.8-4.4-6.8-3.9C3.5,1.5,1.6,3.4,1.1,5.7c-0.4,
+                            1.8,0.1,3.7,1.2,5.1C3.5,12.2,5.2,13,7,13c2.2,0,4.1-1.1,5.2-3h7.9c0.6,0,1.1-0.4,1.4-0.9C21.7,
+                            8.5,21.6,7.9,21.1,7.4z M20.5,8.7c0,0.1-0.2,0.3-0.5,0.3h-8.5l-0.1,0.3C10.6,11,8.9,12,7,
+                            12c-1.5,0-2.9-0.7-3.9-1.8c-1-1.2-1.3-2.7-1-4.2C2.5,4,4.1,2.5,6,2.1C6.4,2,6.7,2,7,2c2.2,0,4.2,
+                            1.4,4.8,3.6L11.9,6h2.4l2.2,2.2l2-2l1.9,1.9C20.7,8.4,20.6,8.6,20.5,8.7z M5.5,4.5C4.1,4.5,3,
+                            5.6,3,7s1.1,2.5,2.5,2.5S8,8.4,8,7S6.9,4.5,5.5,4.5z M5.5,8.5C4.7,8.5,4,7.8,4,7s0.7-1.5,
+                            1.5-1.5S7,6.2,7,7S6.3,8.5,5.5,8.5z"/>
+                    </svg>
+                    <input type="password" value="password" readonly>
+                </div>
+                <div class="component__save-button row flex-center flex-center-align">
+                    <button class="save enter-button" id="enter-button">Enter</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="overlay" id="overlay">
+        <section class="modal section__quit" id="quit">
+            <div class="more-height component__title-line row flex-center-align flex-between">
+                <h4 class="title">Do you really want to Quit?</h4>
+            </div>
+            <div class="next row flex-end">
+                <div class="component__save-button row flex-center flex-center-align">
+                    <button class="save enter-button js--close-modal">Cancel</button>
+                </div>
+                <div class="component__save-button row flex-center flex-center-align">
+                    <button class="save enter-button" id="quit-button">Quit</button>
+                </div>
+            </div>
+        </section>
+        <section class="modal section__online-chat" id="chat-online">
+            <div class="component__title-line row flex-center-align flex-between">
+                <h4 class="title text-upper">online chat with your personal manager</h4>
+                <svg class="icon-close js--close-modal" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                    <polygon points="12.4,1.4 11.6,0.6 6.5,5.8 1.4,0.6 0.6,1.4 5.8,6.5 0.6,11.6 1.4,12.4 6.5,7.2 11.6,
+                        12.4 12.4,11.6 7.2,6.5 "/>
+                </svg>
+            </div>
+            <div class="part-one row flex-center-align">
+                <img class="natural" src="images/manager-big.png" alt="sorry">
+                <div class="row flex-center-align">
+                    <h1>Michael E.</h1>
+                    <div class="online row flex-center flex-center-align">
+                        <h6>online</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="part-two">
+                <div class="manager-text row flex-start flex-center-align">
+                    <h4>Hello. Can I help you?</h4>
+                </div>
+                <div class="user-text row flex-start flex-center-align">
+                    <h4>Hello! I would like to know about Postback.</h4>
+                </div>
+                <div class="manager-text">
+                    <h4>Ok. 5min.</h4>
+                </div>
+            </div>
+            <div class="part-three height-md-82 row flex-center-align flex-around">
+                <div class=" col-sm-12 input-link width-xl-758 width-lg-650 width-md-500 row flex-center-align">
+                    <img src="images/little-message.png" alt="sorry">
+                    <input type="text" value="Enter the message">
+                </div>
+                <div class="col-sm-6 component__save-button row flex-center flex-center-align">
+                    <button class="save">Send</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="js/details.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
