@@ -9,7 +9,7 @@ body {
 
 .container-fluid {
   width: 100%;
-  max-width: 1280px;
+  max-width: 100vw;
   display: flex;
 }
 
@@ -20,12 +20,12 @@ body {
 
 .container-max-width {
   @extend .prop-margin-width;
-  max-width: 1190px;
-  margin: 78px auto 22px 72px;
+  max-width: 100vw;
+  margin: 78px 15px 22px 72px;
 }
 
 .low-margin {
-  margin: 78px auto 22px 72px;
+  margin: 78px 15px 22px 72px;
 }
 
 .row {
@@ -331,7 +331,6 @@ body {
 
 .prop-left-menu {
   background-color: $aside-back;
-  line-height: 42px;
   font-family: $font-roboto-light;
   color: $grey-menu-items;
   position: fixed;
@@ -369,7 +368,7 @@ body {
 
 .prop-sect-top {
   width: 100%;
-  max-width: 1280px;
+  max-width: 100vw;
   display: inline-block;
   position: fixed;
   top: 0;
@@ -477,6 +476,12 @@ body {
     margin: 0 5px;
   }
 
+  .in-small-padding-right {
+    th {
+      padding-right: 40px;
+    }
+  }
+
   .small-sign {
     width: 20px;
     height: 20px;
@@ -484,6 +489,10 @@ body {
 
   .in-small-full-width {
     width: 100%;
+  }
+
+  .in-small-padding-left {
+    padding-left: 20vw;
   }
 }
 
@@ -497,8 +506,8 @@ body {
   .normal-margin {
     transition-property: margin-left, max-width;
     transition-duration: .3s;
-    max-width: 1056px;
-    margin: 78px auto 22px 206px;
+    max-width: 100vw;
+    margin: 78px 15px 22px 206px;
   }
 
   .hidden-low-size {

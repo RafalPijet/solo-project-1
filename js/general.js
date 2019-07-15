@@ -6,7 +6,7 @@
     var topManager = document.getElementById("top-manager");
     var leftManagerShort = document.getElementById("left-manager-short");
     var quit = document.getElementById("quit-icon");
-    var quitMobile = document.getElementById("quit-icon-mobile");
+    // var quitMobile = document.getElementById("quit-icon-mobile");
     var enterButton = document.getElementById("enter-button");
     var mobileMenuLine = document.getElementById("mobile-menu-line");
     var topMenuLine = document.getElementById("top-menu-line");
@@ -107,9 +107,9 @@
         openModal("#quit");
     })
 
-    quitMobile.addEventListener("click", function () {
-        openModal("#quit");
-    })
+    // quitMobile.addEventListener("click", function () {
+    //     openModal("#quit");
+    // })
 
     enterButton.addEventListener("click", function () {
         closeLogin();

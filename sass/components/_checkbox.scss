@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 500px;
   height: 325px;
-  overflow: scroll;
+  overflow-y: auto;
 
   h4 {
     margin: 12px 0 0;
@@ -30,8 +30,8 @@
         border: 1px solid $grey-line;
 
         svg {
-          width: 18px;
-          height: 18px;
+          width: 14px;
+          height: 13px;
           path {
             fill: $white;
           }
