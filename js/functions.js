@@ -1,3 +1,6 @@
+let workField = document.getElementById("field");
+let check = false;
+
 function setContainerPosition() {
 
     if (window.innerWidth <= 992) {

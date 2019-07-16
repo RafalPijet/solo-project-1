@@ -1,7 +1,7 @@
 "use strict";
 (function() {
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("myOutput");
+    let slider = document.getElementById("myRange");
+    let output = document.getElementById("myOutput");
 
     output.innerHTML = slider.value + " hours";
 

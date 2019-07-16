@@ -1,9 +1,7 @@
 "use strict";
 (function () {
-    var verticalMenu = document.getElementById("vartical");
-    var workField = document.getElementById("field");
-    var menuLeft = document.getElementById("menu-left");
-    var check = false;
+    let verticalMenu = document.getElementById("vartical");
+    let menuLeft = document.getElementById("menu-left");
 
     document.querySelectorAll("#overlay .js--close-modal").forEach(function (btn) {
         btn.addEventListener("click", function (e) {

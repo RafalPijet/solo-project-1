@@ -1,66 +1,8 @@
 .section__add-url {
-  width: 100%;
-  max-width: 1074px;
-  background-color: $white;
-  margin: 0 auto;
-  @extend .shadow-content;
-
-  svg {
-    margin-right: 15px;
-  }
+  @extend .initial-properties;
 
   .part-one {
-    padding: 0 18px 28px ;
-    @extend .bottom-line;
-
-    .box {
-      max-width: 437px;
-      width: 100%;
-
-      .input-long {
-        @extend .prop-input-size;
-
-        input {
-          @extend .prop-roboto-light-14;
-          border: none;
-          padding-left: 15px;
-        }
-
-        select {
-          @extend .prop-roboto-light-14;
-          @extend .prop-select;
-          width: 100%;
-          padding-left: 15px;
-          margin-right: 10px;
-        }
-      }
-    }
-
-    .box-low {
-      max-width: 133px;
-      width: 100%;
-
-      .input-short {
-        @extend .prop-input-size;
-        cursor: pointer;
-
-        p {
-          font-family: $font-roboto-light;
-          font-size: 14px;
-          padding: 0 30px 0 12px;
-        }
-      }
-    }
-
-    .short {
-      max-width: 134px;
-      width: 100%;
-    }
-
-    .margin-h4 {
-      margin: 26px 0 19px;
-      line-height: 17px;
-    }
+    @extend .part-one-init-props;
   }
 
   .part-two {
@@ -75,22 +17,6 @@
   }
 
   .part-three {
-    .input-link {
-      @extend .prop-input-size;
-      width: 100%;
-
-      input {
-        @extend .prop-roboto-light-14;
-        border: none;
-        padding-left: 15px;
-        outline: none;
-        width: 100%;
-      }
-    }
-
-    .copy {
-      width: 150px;
-      background-color: $grey-line;
-    }
+    @extend .part-three-props;
   }
 }
