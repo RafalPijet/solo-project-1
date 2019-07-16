@@ -1,4 +1,6 @@
 .component__table-url {
+  overflow-x: auto;
+
   .links-table {
     border-collapse: collapse;
 
@@ -19,7 +21,6 @@
       .first-column {
         padding-left: 16px;
         font-weight: bold;
-        width: 297px;
       }
 
       .second-column {

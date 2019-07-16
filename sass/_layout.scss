@@ -24,6 +24,12 @@ body {
   margin: 78px 15px 22px 72px;
 }
 
+.middle-position {
+  max-width: 1132px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .low-margin {
   margin: 78px 15px 22px 72px;
 }
@@ -450,6 +456,10 @@ body {
     visibility: visible;
   }
 
+  .lower-font-size {
+    font-size: 12px !important;
+  }
+
   .top-margin {
     margin-top: 78px;
   }
@@ -519,7 +529,7 @@ body {
   }
 
   .in-medium-padding-left-18 {
-    padding-left: 18px;
+    padding: 0 18px;
   }
 
   .medium-sign {
